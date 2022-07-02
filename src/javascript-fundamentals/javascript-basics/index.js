@@ -17,4 +17,13 @@ function compareTypes (a, b) {
   return a === b
 }
 
-module.exports = { sumTwoNumbers, compareTypes }
+/** Get nth character of string
+ * Write a function that takes a string (a) and a number (n) as argument
+ * Return the nth character of 'a'
+*/
+
+function nthCharacter (a, n) {
+  return a[n - 1]
+}
+
+module.exports = { sumTwoNumbers, compareTypes, nthCharacter }

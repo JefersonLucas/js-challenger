@@ -107,6 +107,7 @@ Done in 0.00s.
 | --------------- | ----------------------- | ----------------- | ---------- |
 | Sum two numbers | JavaScript fundamentals | JavaScript basics | easy       |
 | Comparison operators, strict equality | JavaScript fundamentals | JavaScript basics | easy |
+| Get nth character of string | JavaScript fundamentals | JavaScript basics | easy |
 
 ## Stacks
 
