@@ -119,8 +119,8 @@ This project is configured with the following stacks:
 - git: `2.28.0`
 - git flow: `1.12.3`
 
-For more information check the [package.json](https://github.com/JefersonLucas/js-challenger/main/package.json) file of this project.
+For more information check the [package.json](https://github.com/JefersonLucas/js-challenger/blob/main/package.json) file of this project.
 
 ## License 
 
-This project is licensed under the MIT license - see the [LICENSE.md](https://github.com/JefersonLucas/js-challenger/main/LICENSE.md) for details.
+This project is licensed under the MIT license - see the [LICENSE.md](https://github.com/JefersonLucas/js-challenger/blob/main/LICENSE.md) for details.
