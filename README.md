@@ -103,9 +103,16 @@ Done in 0.00s.
 
 ## Challenges solved
 
+All the challenges I've already completed:
+
 | Challenge       | Category                | Topic             | Difficulty |
 | --------------- | ----------------------- | ----------------- | ---------- |
-| Sum two numbers | JavaScript fundamentals | JavaScript basics | easy       |
+| Sum two numbers | Fundamentals | Basics | easy       |
+| Comparison operators, strict equality | Fundamentals | Basics | easy |
+| Get nth character of string | Fundamentals | Basics | easy |
+| Remove last n characters of string | Fundamentals | Basics | easy |
+| Get type of value | Fundamentals | Basics | easy |
+| Accessing object properties one | Fundamentals | Objects | easy |
 
 ## Stacks
 
@@ -118,8 +125,8 @@ This project is configured with the following stacks:
 - git: `2.28.0`
 - git flow: `1.12.3`
 
-For more information check the [package.json](https://github.com/JefersonLucas/js-challenger/main/package.json) file of this project.
+For more information check the [package.json](https://github.com/JefersonLucas/js-challenger/blob/main/package.json) file of this project.
 
 ## License 
 
-This project is licensed under the MIT license - see the [LICENSE.md](https://github.com/JefersonLucas/js-challenger/main/LICENSE.md) for details.
+This project is licensed under the MIT license - see the [LICENSE.md](https://github.com/JefersonLucas/js-challenger/blob/main/LICENSE.md) for details.
