@@ -1,12 +1,26 @@
 {
   "name": "js-challenger",
   "version": "1.0.0",
+  "description": "Repository for javascript challenges",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "watch": "jest --watch --verbose=true"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JefersonLucas/js-challenger.git"
   },
+  "keywords": [
+    "javascript",
+    "ecmascript"
+  ],
+  "author": "Jeferson Lucas <jeferson.luckas@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JefersonLucas/js-challenger/issues"
+  },
+  "homepage": "https://github.com/JefersonLucas/js-challenger#readme",
   "devDependencies": {
     "eslint": "^8.0.1",
     "eslint-config-standard": "^17.0.0",
