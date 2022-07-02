@@ -1,4 +1,9 @@
-const { sumTwoNumbers, compareTypes, nthCharacter } = require('./index')
+const {
+  sumTwoNumbers,
+  compareTypes,
+  nthCharacter,
+  removeLastCharacters
+} = require('./index')
 
 test('must sum two numbers', () => {
   expect(sumTwoNumbers(1, 2)).toBe(3)
@@ -17,4 +22,10 @@ test('should return the nth character of the string', () => {
   expect(nthCharacter('abcd', 1)).toBe('a')
   expect(nthCharacter('zyxbwpl', 5)).toBe('w')
   expect(nthCharacter('gfedcba', 3)).toBe('e')
+})
+
+test('must remove the last 3 characters', () => {
+  expect(removeLastCharacters('abcdefg')).toMatch('abcd')
+  expect(removeLastCharacters('1234')).toMatch('1')
+  expect(removeLastCharacters('fgedcba')).toMatch('fged')
 })
