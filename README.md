@@ -112,6 +112,7 @@ All the challenges I've already completed:
 | Get nth character of string | Fundamentals | Basics | easy |
 | Remove last n characters of string | Fundamentals | Basics | easy |
 | Get type of value | Fundamentals | Basics | easy |
+| Accessing object properties one | Fundamentals | Objects | easy |
 
 ## Stacks
 
