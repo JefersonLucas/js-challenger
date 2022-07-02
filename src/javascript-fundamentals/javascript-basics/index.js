@@ -36,9 +36,19 @@ function removeLastCharacters (a) {
   return a.slice(0, -3)
 }
 
+/** Get type of value
+ * Write a function that takes a value as argument
+ * Return the type of the value
+ */
+
+function typeValue (a) {
+  return typeof a
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
   nthCharacter,
-  removeLastCharacters
+  removeLastCharacters,
+  typeValue
 }

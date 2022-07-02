@@ -2,7 +2,8 @@ const {
   sumTwoNumbers,
   compareTypes,
   nthCharacter,
-  removeLastCharacters
+  removeLastCharacters,
+  typeValue
 } = require('./index')
 
 test('must sum two numbers', () => {
@@ -28,4 +29,13 @@ test('must remove the last 3 characters', () => {
   expect(removeLastCharacters('abcdefg')).toMatch('abcd')
   expect(removeLastCharacters('1234')).toMatch('1')
   expect(removeLastCharacters('fgedcba')).toMatch('fged')
+})
+
+test('must return the type of the value', () => {
+  expect(typeValue(1)).toMatch('number')
+  expect(typeValue(false)).toMatch('boolean')
+  expect(typeValue({})).toMatch('object')
+  expect(typeValue(null)).toMatch('object')
+  expect(typeValue('string')).toMatch('string')
+  expect(typeValue(['array'])).toMatch('object')
 })

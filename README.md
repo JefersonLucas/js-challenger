@@ -103,12 +103,15 @@ Done in 0.00s.
 
 ## Challenges solved
 
+All the challenges I've already completed:
+
 | Challenge       | Category                | Topic             | Difficulty |
 | --------------- | ----------------------- | ----------------- | ---------- |
-| Sum two numbers | JavaScript fundamentals | JavaScript basics | easy       |
-| Comparison operators, strict equality | JavaScript fundamentals | JavaScript basics | easy |
-| Get nth character of string | JavaScript fundamentals | JavaScript basics | easy |
-| Remove last n characters of string | JavaScript fundamentals | JavaScript basics | easy |
+| Sum two numbers | Fundamentals | Basics | easy       |
+| Comparison operators, strict equality | Fundamentals | Basics | easy |
+| Get nth character of string | Fundamentals | Basics | easy |
+| Remove last n characters of string | Fundamentals | Basics | easy |
+| Get type of value | Fundamentals | Basics | easy |
 
 ## Stacks
 
