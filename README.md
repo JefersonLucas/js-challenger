@@ -106,6 +106,7 @@ Done in 0.00s.
 | Challenge       | Category                | Topic             | Difficulty |
 | --------------- | ----------------------- | ----------------- | ---------- |
 | Sum two numbers | JavaScript fundamentals | JavaScript basics | easy       |
+| Comparison operators, strict equality | JavaScript fundamentals | JavaScript basics | easy |
 
 ## Stacks
 
