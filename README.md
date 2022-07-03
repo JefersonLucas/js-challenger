@@ -114,6 +114,7 @@ All the challenges I've already completed:
 | 01 | Get type of value | Fundamentals | Basics | easy |
 | 01 | Accessing object properties one | Fundamentals | Objects | easy |
 | 02 | Get last n characters of string | Fundamentals | Basics | easy |
+| 02 | Get nth element of array | Fundamentals | Arrays | easy |
 
 ## Stacks
 
