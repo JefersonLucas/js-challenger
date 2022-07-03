@@ -119,6 +119,7 @@ All the challenges I've already completed:
 | 02 | Creating Javascript objects one | Fundamentals | Objects | easy |
 | 02 | Accessing object properties three | Fundamentals | Objects | easy |
 | 02 | Extract first half of string | Fundamentals | Basics | easy |
+| 02 | Count number of elements in JavaScript array | Fundamentals | Arrays | easy |
 
 ## Stacks
 

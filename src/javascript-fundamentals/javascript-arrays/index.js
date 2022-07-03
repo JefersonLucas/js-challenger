@@ -22,7 +22,20 @@ function getFirstsElementsOfArray (a) {
   return a.slice(0, 3)
 }
 
+/** **Count number of elements in JavaScript array**
+ * is a function that takes an array `a` as argument
+ * and return the number of elements in a
+ *
+ * @param {*} a is an array
+ * @returns the number of elements in `a`
+ */
+
+function countNumberOfArray (a) {
+  return a.length
+}
+
 module.exports = {
   getElementOfArray,
-  getFirstsElementsOfArray
+  getFirstsElementsOfArray,
+  countNumberOfArray
 }
