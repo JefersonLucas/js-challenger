@@ -10,4 +10,19 @@ function getElementOfArray (a, n) {
   return a[n - 1]
 }
 
-module.exports = { getElementOfArray }
+/** **Get first n elements of an array**
+ * is a function that takes an array `a` as argument
+ * and extract the first 3 elements of `a`
+ *
+ * @param {*} a is an array
+ * @returns the first 3 elements of `a`
+ */
+
+function getFirstsElementsOfArray (a) {
+  return a.slice(0, 3)
+}
+
+module.exports = {
+  getElementOfArray,
+  getFirstsElementsOfArray
+}
