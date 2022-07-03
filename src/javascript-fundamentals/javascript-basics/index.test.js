@@ -1,9 +1,11 @@
+const { expect } = require('expect')
 const {
   sumTwoNumbers,
   compareTypes,
   nthCharacter,
   removeLastCharacters,
-  typeValue
+  typeValue,
+  extractLastCharacters
 } = require('./index')
 
 test('must sum two numbers', () => {
@@ -38,4 +40,10 @@ test('must return the type of the value', () => {
   expect(typeValue(null)).toMatch('object')
   expect(typeValue('string')).toMatch('string')
   expect(typeValue(['array'])).toMatch('object')
+})
+
+test('must extract the last 3 characters from the string', () => {
+  expect(extractLastCharacters('abcdefg')).toMatch('efg')
+  expect(extractLastCharacters('1234')).toMatch('234')
+  expect(extractLastCharacters('fgedcba')).toMatch('cba')
 })

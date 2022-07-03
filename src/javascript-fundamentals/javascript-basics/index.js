@@ -45,10 +45,21 @@ function typeValue (a) {
   return typeof a
 }
 
+/** Get last n characters of string
+ * Write a function that takes a string as argument
+ * Extract the last 3 characters from the string
+ * Return the result
+ */
+
+function extractLastCharacters (str) {
+  return str.slice(-3)
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
   nthCharacter,
   removeLastCharacters,
-  typeValue
+  typeValue,
+  extractLastCharacters
 }

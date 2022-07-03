@@ -105,14 +105,15 @@ Done in 0.00s.
 
 All the challenges I've already completed:
 
-| Challenge       | Category                | Topic             | Difficulty |
-| --------------- | ----------------------- | ----------------- | ---------- |
-| Sum two numbers | Fundamentals | Basics | easy       |
-| Comparison operators, strict equality | Fundamentals | Basics | easy |
-| Get nth character of string | Fundamentals | Basics | easy |
-| Remove last n characters of string | Fundamentals | Basics | easy |
-| Get type of value | Fundamentals | Basics | easy |
-| Accessing object properties one | Fundamentals | Objects | easy |
+| Days | Challenge     | Category     | Topic  | Difficulty |
+| ---- | ------------- | ------------ | ------ | ---------- |
+| 01 | Sum two numbers | Fundamentals | Basics | easy       |
+| 01 | Comparison operators, strict equality | Fundamentals | Basics | easy |
+| 01 | Get nth character of string | Fundamentals | Basics | easy |
+| 01 | Remove last n characters of string | Fundamentals | Basics | easy |
+| 01 | Get type of value | Fundamentals | Basics | easy |
+| 01 | Accessing object properties one | Fundamentals | Objects | easy |
+| 02 | Get last n characters of string | Fundamentals | Basics | easy |
 
 ## Stacks
 
