@@ -55,11 +55,24 @@ function extractLastCharacters (str) {
   return str.slice(-3)
 }
 
+/** **Extract first half of string**
+ * is a function that takes a string `a` as argument
+ * and extract the first half a
+ *
+ * @param {*} a is a string
+ * @returns the result
+ */
+
+function extractFirstHalf (a) {
+  return a.slice(0, a.length / 2)
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
   nthCharacter,
   removeLastCharacters,
   typeValue,
-  extractLastCharacters
+  extractLastCharacters,
+  extractFirstHalf
 }

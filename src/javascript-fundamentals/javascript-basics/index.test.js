@@ -5,7 +5,8 @@ const {
   nthCharacter,
   removeLastCharacters,
   typeValue,
-  extractLastCharacters
+  extractLastCharacters,
+  extractFirstHalf
 } = require('./index')
 
 test('must sum two numbers', () => {
@@ -46,4 +47,10 @@ test('must extract the last 3 characters from the string', () => {
   expect(extractLastCharacters('abcdefg')).toMatch('efg')
   expect(extractLastCharacters('1234')).toMatch('234')
   expect(extractLastCharacters('fgedcba')).toMatch('cba')
+})
+
+test('must extract the first half', () => {
+  expect(extractFirstHalf('abcdefgh')).toMatch('abcd')
+  expect(extractFirstHalf('1234')).toMatch('12')
+  expect(extractFirstHalf('gedcba')).toMatch('ged')
 })
