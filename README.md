@@ -116,6 +116,7 @@ All the challenges I've already completed:
 | 02 | Get last n characters of string | Fundamentals | Basics | easy |
 | 02 | Get nth element of array | Fundamentals | Arrays | easy |
 | 02 | Get first n elements of an array | Fundamentals | Arrays | easy |
+| 02 | Creating Javascript objects one | Fundamentals | Objects | easy |
 
 ## Stacks
 
