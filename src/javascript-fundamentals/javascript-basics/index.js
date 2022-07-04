@@ -79,6 +79,48 @@ function getFirstCharacters (a) {
   return a.slice(0, 3)
 }
 
+/** **Remove first n characters of string**
+ * is a function that takes a string `a` as argument
+ * and remove the first 3 characters of `a`
+ *
+ * @param {*} a is an string
+ * @returns // the result
+ */
+
+function removeFirstCharacters (a) {
+  return a.slice(3)
+}
+
+/** **Multiplication, division, and comparison operators**
+ * is a function that takes two numbers (`a` and `b`) as arguments
+ * and if a is smaller than b, divide a by b
+ * or otherwise, multiply both numbers.
+ *
+ * Return the resulting value.
+ *
+ * @param {*} a is a number
+ * @param {*} b is a number
+ * @returns number
+ */
+
+function operatorCompare (a, b) {
+  return a < b ? a / b : a * b
+}
+
+/** **Return the percentage of a number**
+ * is a function that takes two numbers (`a` and `b`) as argument.
+ *
+ * Return `b` percent of `a`
+ *
+ * @param {*} a is a number
+ * @param {*} b is a number
+ * @returns number
+ */
+
+function percentageOfNumber (a, b) {
+  return (a * b) / 100 // Other solution: return b / 100 * a
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -87,5 +129,8 @@ module.exports = {
   typeValue,
   extractLastCharacters,
   extractFirstHalf,
-  getFirstCharacters
+  getFirstCharacters,
+  removeFirstCharacters,
+  operatorCompare,
+  percentageOfNumber
 }
