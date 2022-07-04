@@ -67,6 +67,18 @@ function extractFirstHalf (a) {
   return a.slice(0, a.length / 2)
 }
 
+/** **Get first n characters of string**
+ * is a function that takes a string `a` as argument and g
+ * get the first 3 characters of `a`
+ *
+ * @param {*} a is a string
+ * @returns the result
+ */
+
+function getFirstCharacters (a) {
+  return a.slice(0, 3)
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -74,5 +86,6 @@ module.exports = {
   removeLastCharacters,
   typeValue,
   extractLastCharacters,
-  extractFirstHalf
+  extractFirstHalf,
+  getFirstCharacters
 }

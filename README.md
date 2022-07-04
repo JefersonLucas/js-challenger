@@ -120,6 +120,7 @@ All the challenges I've already completed:
 | 02 | Accessing object properties three | Fundamentals | Objects | easy |
 | 02 | Extract first half of string | Fundamentals | Basics | easy |
 | 02 | Count number of elements in JavaScript array | Fundamentals | Arrays | easy |
+| 02 | Get first n characters of string | Fundamentals | Basics | easy |
 
 ## Stacks
 

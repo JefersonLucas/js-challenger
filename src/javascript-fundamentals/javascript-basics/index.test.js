@@ -6,7 +6,8 @@ const {
   removeLastCharacters,
   typeValue,
   extractLastCharacters,
-  extractFirstHalf
+  extractFirstHalf,
+  getFirstCharacters
 } = require('./index')
 
 test('must sum two numbers', () => {
@@ -53,4 +54,10 @@ test('must extract the first half', () => {
   expect(extractFirstHalf('abcdefgh')).toMatch('abcd')
   expect(extractFirstHalf('1234')).toMatch('12')
   expect(extractFirstHalf('gedcba')).toMatch('ged')
+})
+
+test('must get the first 3 characters', () => {
+  expect(getFirstCharacters('abcdefg')).toMatch('abc')
+  expect(getFirstCharacters('1234')).toMatch('123')
+  expect(getFirstCharacters('fgedcba')).toMatch('fge')
 })
