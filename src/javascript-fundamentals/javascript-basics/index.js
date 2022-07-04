@@ -45,10 +45,47 @@ function typeValue (a) {
   return typeof a
 }
 
+/** Get last n characters of string
+ * Write a function that takes a string as argument
+ * Extract the last 3 characters from the string
+ * Return the result
+ */
+
+function extractLastCharacters (str) {
+  return str.slice(-3)
+}
+
+/** **Extract first half of string**
+ * is a function that takes a string `a` as argument
+ * and extract the first half a
+ *
+ * @param {*} a is a string
+ * @returns the result
+ */
+
+function extractFirstHalf (a) {
+  return a.slice(0, a.length / 2)
+}
+
+/** **Get first n characters of string**
+ * is a function that takes a string `a` as argument and g
+ * get the first 3 characters of `a`
+ *
+ * @param {*} a is a string
+ * @returns the result
+ */
+
+function getFirstCharacters (a) {
+  return a.slice(0, 3)
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
   nthCharacter,
   removeLastCharacters,
-  typeValue
+  typeValue,
+  extractLastCharacters,
+  extractFirstHalf,
+  getFirstCharacters
 }
