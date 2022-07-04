@@ -1,7 +1,9 @@
+const { expect } = require('expect')
 const {
   getElementOfArray,
   getFirstsElementsOfArray,
-  countNumberOfArray
+  countNumberOfArray,
+  getNegativeNumberOfArray
 } = require('./index')
 
 test('must return the nth element of a', () => {
@@ -20,4 +22,10 @@ test('must return the number of elements is a', () => {
   expect(countNumberOfArray([1, 2, 2, 4])).toBe(4)
   expect(countNumberOfArray([9, 9, 9])).toBe(3)
   expect(countNumberOfArray([4, 3, 2, 1, 0])).toBe(5)
+})
+
+test('must return number of negative values in the array', () => {
+  expect(getNegativeNumberOfArray([1, -2, 2, -4])).toBe(2)
+  expect(getNegativeNumberOfArray([0, 9, 1])).toBe(0)
+  expect(getNegativeNumberOfArray([4, -3, 2, 1, 0])).toBe(1)
 })

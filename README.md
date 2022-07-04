@@ -121,6 +121,7 @@ All the challenges I've already completed:
 | 02 | Extract first half of string | Fundamentals | Basics | easy |
 | 02 | Count number of elements in JavaScript array | Fundamentals | Arrays | easy |
 | 02 | Get first n characters of string | Fundamentals | Basics | easy |
+| 03 | Count number of negative values in array | Fundamentals | Arrays | easy |
 
 ## Stacks
 

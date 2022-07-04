@@ -34,8 +34,20 @@ function countNumberOfArray (a) {
   return a.length
 }
 
+/** **Count number of negative values in array**
+ * is a function that takes an array of numbers as argument
+ *
+ * @param {*} a is an array
+ * @returns the number of negative values in the array
+ */
+
+function getNegativeNumberOfArray (a) {
+  return a.filter((i) => i < 0).length
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
-  countNumberOfArray
+  countNumberOfArray,
+  getNegativeNumberOfArray
 }
