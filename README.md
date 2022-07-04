@@ -127,6 +127,7 @@ All the challenges I've already completed:
 | 03 | Multiplication, division, and comparison operators | Fundamentals | Basics | easy |
 | 03 | Sort an array of strings alphabetically | Fundamentals | Basics | easy |
 | 03 | Check if property exists in object | Fundamentals | Basics | easy |
+| 03 | Check if value is present in Set | Fundamentals | Sets | easy |
 
 ## Stacks
 
