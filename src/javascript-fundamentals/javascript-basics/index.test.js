@@ -7,8 +7,9 @@ const {
   extractLastCharacters,
   extractFirstHalf,
   getFirstCharacters,
-  removeFirstCharacters
-} = require('./index')
+  removeFirstCharacters,
+  operatorCompare
+} = require('./')
 
 test('must sum two numbers', () => {
   expect(sumTwoNumbers(1, 2)).toBe(3)
@@ -66,4 +67,11 @@ test('must remove the first 3 characters of string', () => {
   expect(removeFirstCharacters('abcdefg')).toBe('defg')
   expect(removeFirstCharacters('1234')).toBe('4')
   expect(removeFirstCharacters('fgedcba')).toBe('dcba')
+})
+
+test('must compare arguments and decide whether to divide or multiply the numbers', () => {
+  expect(operatorCompare(10, 100)).toBe(0.1)
+  expect(operatorCompare(90, 45)).toBe(4050)
+  expect(operatorCompare(8, 20)).toBe(0.4)
+  expect(operatorCompare(2, 0.5)).toBe(1)
 })

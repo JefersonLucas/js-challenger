@@ -91,6 +91,22 @@ function removeFirstCharacters (a) {
   return a.slice(3)
 }
 
+/** **Multiplication, division, and comparison operators**
+ * is a function that takes two numbers (`a` and `b`) as arguments
+ * and if a is smaller than b, divide a by b
+ * or otherwise, multiply both numbers.
+ *
+ * Return the resulting value.
+ *
+ * @param {*} a is a number
+ * @param {*} b is a number
+ * @returns number
+ */
+
+function operatorCompare (a, b) {
+  return a < b ? a / b : a * b
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -100,5 +116,6 @@ module.exports = {
   extractLastCharacters,
   extractFirstHalf,
   getFirstCharacters,
-  removeFirstCharacters
+  removeFirstCharacters,
+  operatorCompare
 }

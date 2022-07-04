@@ -124,6 +124,7 @@ All the challenges I've already completed:
 | 03 | Count number of negative values in array | Fundamentals | Arrays | easy |
 | 03 | Remove first n characters of string | Fundamentals | Basics | easy |
 | 03 | Remove first n elements of an array | Fundamentals | Arrays | easy |
+| 03 | Multiplication, division, and comparison operators | Fundamentals | Basics | easy |
 
 ## Stacks
 
