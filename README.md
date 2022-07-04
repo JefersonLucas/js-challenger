@@ -52,6 +52,18 @@ src/
 
 Choose a challenge from the **categories** and **topics** and do it inside the `index.js` file and the tests in the `index.test.js` file.
 
+- Test example in `index.test.js` file:
+
+```js
+const { sumTwoNumbers } = require('./index')
+
+test('must sum two numbers', () => {
+  expect(sumTwoNumbers(1, 2)).toBe(3)
+  expect(sumTwoNumbers(1, 10)).toBe(11)
+  expect(sumTwoNumbers(99, 1)).toBe(100)
+})
+```
+
 - Example challenge in `index.js` file:
 
 ```js
@@ -64,18 +76,6 @@ function sumTwoNumbers (a, b) {
 }
 
 module.exports = { sumTwoNumbers }
-```
-
-- Test example in `index.test.js` file:
-
-```js
-const { sumTwoNumbers } = require('./index')
-
-test('must sum two numbers', () => {
-  expect(sumTwoNumbers(1, 2)).toBe(3)
-  expect(sumTwoNumbers(1, 10)).toBe(11)
-  expect(sumTwoNumbers(99, 1)).toBe(100)
-})
 ```
 
 Run the tests to check whether your challenge passed or not. To test use the commands:
