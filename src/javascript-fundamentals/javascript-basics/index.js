@@ -79,6 +79,18 @@ function getFirstCharacters (a) {
   return a.slice(0, 3)
 }
 
+/** **Remove first n characters of string**
+ * is a function that takes a string `a` as argument
+ * and remove the first 3 characters of `a`
+ *
+ * @param {*} a is an string
+ * @returns // the result
+ */
+
+function removeFirstCharacters (a) {
+  return a.slice(3)
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -87,5 +99,6 @@ module.exports = {
   typeValue,
   extractLastCharacters,
   extractFirstHalf,
-  getFirstCharacters
+  getFirstCharacters,
+  removeFirstCharacters
 }

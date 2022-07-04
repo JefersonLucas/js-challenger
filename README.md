@@ -1,4 +1,4 @@
-# Javascript challenger
+# JS challenger
 
 ![JS Challenger](https://img.shields.io/badge/JefersonLucas-%20JS%20Challenger-yellow)
 ![GitHub last commit](https://img.shields.io/github/last-commit/JefersonLucas/js-challenger?style=flat)
@@ -122,6 +122,7 @@ All the challenges I've already completed:
 | 02 | Count number of elements in JavaScript array | Fundamentals | Arrays | easy |
 | 02 | Get first n characters of string | Fundamentals | Basics | easy |
 | 03 | Count number of negative values in array | Fundamentals | Arrays | easy |
+| 03 | Remove first n characters of string | Fundamentals | Basics | easy |
 
 ## Stacks
 
