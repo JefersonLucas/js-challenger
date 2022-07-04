@@ -71,11 +71,26 @@ function sortElementsAlphabetically (arr) {
   return arr.sort()
 }
 
+/** **Get last n elements of an array**
+ * is a function that takes an array `a` as argument
+ * ans extract the last 3 elements of `a`.
+ *
+ * Return the resulting array.
+ *
+ * @param {*} a is an array
+ * @returns array
+ */
+
+function getLastElementOfArray (a) {
+  return a.slice(-3)
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
   countNumberOfArray,
   getNegativeNumberOfArray,
   removeFirstElementsOfArray,
-  sortElementsAlphabetically
+  sortElementsAlphabetically,
+  getLastElementOfArray
 }

@@ -4,7 +4,8 @@ const {
   countNumberOfArray,
   getNegativeNumberOfArray,
   removeFirstElementsOfArray,
-  sortElementsAlphabetically
+  sortElementsAlphabetically,
+  getLastElementOfArray
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -41,5 +42,11 @@ describe('Javascript Arrays', () => {
   test('must the array elememts alphabetically', () => {
     expect(sortElementsAlphabetically(['b', 'c', 'd', 'a'])).toStrictEqual(['a', 'b', 'c', 'd'])
     expect(sortElementsAlphabetically(['z', 'c', 'd', 'a', 'y', 'a', 'w'])).toStrictEqual(['a', 'a', 'c', 'd', 'w', 'y', 'z'])
+  })
+
+  test('must get the last element of array', () => {
+    expect(getLastElementOfArray([1, 2, 3, 4])).toStrictEqual([2, 3, 4])
+    expect(getLastElementOfArray([5, 4, 3, 2, 1, 0])).toStrictEqual([2, 1, 0])
+    expect(getLastElementOfArray([99, 1, 1])).toStrictEqual([99, 1, 1])
   })
 })
