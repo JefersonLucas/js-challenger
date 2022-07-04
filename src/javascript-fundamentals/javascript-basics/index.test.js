@@ -8,7 +8,8 @@ const {
   extractFirstHalf,
   getFirstCharacters,
   removeFirstCharacters,
-  operatorCompare
+  operatorCompare,
+  percentageOfNumber
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -75,5 +76,11 @@ describe('Javascript Basics', () => {
     expect(operatorCompare(90, 45)).toBe(4050)
     expect(operatorCompare(8, 20)).toBe(0.4)
     expect(operatorCompare(2, 0.5)).toBe(1)
+  })
+
+  test('must return percentage of number', () => {
+    expect(percentageOfNumber(100, 50)).toBe(50)
+    expect(percentageOfNumber(10, 1)).toBe(0.1)
+    expect(percentageOfNumber(500, 25)).toBe(125)
   })
 })

@@ -107,6 +107,20 @@ function operatorCompare (a, b) {
   return a < b ? a / b : a * b
 }
 
+/** **Return the percentage of a number**
+ * is a function that takes two numbers (`a` and `b`) as argument.
+ *
+ * Return `b` percent of `a`
+ *
+ * @param {*} a is a number
+ * @param {*} b is a number
+ * @returns number
+ */
+
+function percentageOfNumber (a, b) {
+  return (a * b) / 100 // Other solution: return b / 100 * a
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -117,5 +131,6 @@ module.exports = {
   extractFirstHalf,
   getFirstCharacters,
   removeFirstCharacters,
-  operatorCompare
+  operatorCompare,
+  percentageOfNumber
 }
