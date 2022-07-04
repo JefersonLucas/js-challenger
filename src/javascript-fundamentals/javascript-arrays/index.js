@@ -45,9 +45,22 @@ function getNegativeNumberOfArray (a) {
   return a.filter((i) => i < 0).length
 }
 
+/** **Remove first n elements of an array**
+ * is a function that takes an array `a` as argument
+ * and remove the first 3 elements of `a`
+ *
+ * @param {*} a
+ * @returns the result
+ */
+
+function removeFirstElementsOfArray (a) {
+  return a.slice(3)
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
   countNumberOfArray,
-  getNegativeNumberOfArray
+  getNegativeNumberOfArray,
+  removeFirstElementsOfArray
 }

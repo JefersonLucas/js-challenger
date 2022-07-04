@@ -3,7 +3,8 @@ const {
   getElementOfArray,
   getFirstsElementsOfArray,
   countNumberOfArray,
-  getNegativeNumberOfArray
+  getNegativeNumberOfArray,
+  removeFirstElementsOfArray
 } = require('./index')
 
 test('must return the nth element of a', () => {
@@ -28,4 +29,10 @@ test('must return number of negative values in the array', () => {
   expect(getNegativeNumberOfArray([1, -2, 2, -4])).toBe(2)
   expect(getNegativeNumberOfArray([0, 9, 1])).toBe(0)
   expect(getNegativeNumberOfArray([4, -3, 2, 1, 0])).toBe(1)
+})
+
+test('must remove first 3 elements of array', () => {
+  expect(removeFirstElementsOfArray([1, 2, 3, 4])).toStrictEqual([4])
+  expect(removeFirstElementsOfArray([5, 4, 3, 2, 1, 0])).toStrictEqual([2, 1, 0])
+  expect(removeFirstElementsOfArray([99, 1, 1])).toStrictEqual([])
 })
