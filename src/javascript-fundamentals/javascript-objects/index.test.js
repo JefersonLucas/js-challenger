@@ -3,7 +3,7 @@ const {
   createObjectOne,
   accessingObjByPropertie,
   checkPropertyExists
-} = require('./index')
+} = require('./')
 
 test('should return the value of the property with key country', () => {
   expect(propertyKeyCountry({ continent: 'Asia', country: 'Japan' })).toBe('Japan')

@@ -1,4 +1,3 @@
-const { expect } = require('expect')
 const {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -6,7 +5,7 @@ const {
   getNegativeNumberOfArray,
   removeFirstElementsOfArray,
   sortElementsAlphabetically
-} = require('./index')
+} = require('./')
 
 test('must return the nth element of a', () => {
   expect(getElementOfArray([1, 2, 3, 4, 5], 3)).toBe(3)
