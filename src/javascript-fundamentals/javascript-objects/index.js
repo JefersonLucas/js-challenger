@@ -45,9 +45,25 @@ function checkPropertyExists (a, b) {
   return !!a[b] // another possible solution: `b in a`
 }
 
+/** **Creating Javascript objects two**
+ *  is a function that takes two strings (`a` and `b`) as arguments
+ * and create an object that has a property with key `a` and a value of `b`.
+ *
+ * Return the object
+ *
+ * @param {*} a is an string
+ * @param {*} b is an string
+ * @returns object
+ */
+
+function createObjects (a, b) {
+  return { [a]: b }
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
   accessingObjByPropertie,
-  checkPropertyExists
+  checkPropertyExists,
+  createObjects
 }

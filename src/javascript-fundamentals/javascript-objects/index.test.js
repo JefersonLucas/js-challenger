@@ -2,7 +2,8 @@ const {
   propertyKeyCountry,
   createObjectOne,
   accessingObjByPropertie,
-  checkPropertyExists
+  checkPropertyExists,
+  createObjects
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -26,5 +27,11 @@ describe('Javascript Objects', () => {
     expect(checkPropertyExists({ a: 1, b: 2, c: 3 }, 'b')).toBe(true)
     expect(checkPropertyExists({ x: 'a', y: 'b', z: 'c' }, 'a')).toBe(false)
     expect(checkPropertyExists({ x: 'a', y: 'b', z: 'c' }, 'z')).toBe(true)
+  })
+
+  test('must creating obejects two', () => {
+    expect(createObjects('a', 'b')).toStrictEqual({ a: 'b' })
+    expect(createObjects('z', 'x')).toStrictEqual({ z: 'x' })
+    expect(createObjects('b', 'w')).toStrictEqual({ b: 'w' })
   })
 })

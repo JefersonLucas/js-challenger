@@ -131,6 +131,7 @@ All the challenges I've already completed:
 | 03 | Get last n elements of an array | Fundamentals | Arrays | easy |
 | 03 | Return the percentage of a number | Fundamentals | Basics | easy |
 | 03 | Check if one date is earlier than another | Fundamentals | Dates | easy |
+| 03 | Creating Javascript objects two | Fundamentals | Objects | easy |
 
 ## Stacks
 
