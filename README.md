@@ -130,6 +130,7 @@ All the challenges I've already completed:
 | 03 | Check if value is present in Set | Fundamentals | Sets | easy |
 | 03 | Get last n elements of an array | Fundamentals | Arrays | easy |
 | 03 | Return the percentage of a number | Fundamentals | Basics | easy |
+| 03 | Check if one date is earlier than another | Fundamentals | Dates | easy |
 
 ## Stacks
 
