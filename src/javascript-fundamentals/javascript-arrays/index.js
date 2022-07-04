@@ -57,10 +57,25 @@ function removeFirstElementsOfArray (a) {
   return a.slice(3)
 }
 
+/** **Sort an array of strings alphabetically**
+ * is a function that takes an array of strings as argument
+ * and sort the array elements alphabetically
+ *
+ * Return the result.
+ *
+ * @param {*} arr is array
+ * @returns array
+ */
+
+function sortElementsAlphabetically (arr) {
+  return arr.sort()
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
   countNumberOfArray,
   getNegativeNumberOfArray,
-  removeFirstElementsOfArray
+  removeFirstElementsOfArray,
+  sortElementsAlphabetically
 }

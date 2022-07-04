@@ -4,7 +4,8 @@ const {
   getFirstsElementsOfArray,
   countNumberOfArray,
   getNegativeNumberOfArray,
-  removeFirstElementsOfArray
+  removeFirstElementsOfArray,
+  sortElementsAlphabetically
 } = require('./index')
 
 test('must return the nth element of a', () => {
@@ -35,4 +36,9 @@ test('must remove first 3 elements of array', () => {
   expect(removeFirstElementsOfArray([1, 2, 3, 4])).toStrictEqual([4])
   expect(removeFirstElementsOfArray([5, 4, 3, 2, 1, 0])).toStrictEqual([2, 1, 0])
   expect(removeFirstElementsOfArray([99, 1, 1])).toStrictEqual([])
+})
+
+test('must the array elememts alphabetically', () => {
+  expect(sortElementsAlphabetically(['b', 'c', 'd', 'a'])).toStrictEqual(['a', 'b', 'c', 'd'])
+  expect(sortElementsAlphabetically(['z', 'c', 'd', 'a', 'y', 'a', 'w'])).toStrictEqual(['a', 'a', 'c', 'd', 'w', 'y', 'z'])
 })
