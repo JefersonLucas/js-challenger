@@ -126,17 +126,18 @@ All the challenges I've already completed:
 | 03 | Remove first n elements of an array | Fundamentals | Arrays | easy |
 | 03 | Multiplication, division, and comparison operators | Fundamentals | Basics | easy |
 | 03 | Sort an array of strings alphabetically | Fundamentals | Basics | easy |
+| 03 | Check if property exists in object | Fundamentals | Basics | easy |
 
 ## Stacks
 
 This project is configured with the following stacks:
 
-- node: `16.13.2`
-- yarn: `1.22.5`
-- jest: `28.1.2`
-- eslint: `8.19.0`
-- git: `2.28.0`
-- git flow: `1.12.3`
+- Node: `16.13.2`
+- Yarn: `1.22.5`
+- Jest: `28.1.2`
+- ESLint: `8.19.0`
+- Git: `2.28.0`
+- Git Flow: `1.12.3`
 
 For more information check the [package.json](https://github.com/JefersonLucas/js-challenger/blob/main/package.json) file of this project.
 
