@@ -72,11 +72,23 @@ function extractKeysFromObject (a) {
   return Object.keys(a)
 }
 
+/** **Sum object values**
+ * is a function that takes an object `a` as argument
+ * and return the sum of all object values.
+ *
+ * @param {*} a is a Object
+ * @returns number
+ */
+function sumObjectValues (a) {
+  return Object.values(a).reduce((a, b) => a + b, 0)
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
   accessingObjByPropertie,
   checkPropertyExists,
   createObjects,
-  extractKeysFromObject
+  extractKeysFromObject,
+  sumObjectValues
 }

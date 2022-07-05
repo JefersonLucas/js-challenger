@@ -4,7 +4,8 @@ const {
   accessingObjByPropertie,
   checkPropertyExists,
   createObjects,
-  extractKeysFromObject
+  extractKeysFromObject,
+  sumObjectValues
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -40,5 +41,9 @@ describe('Javascript Objects', () => {
     expect(extractKeysFromObject({ a: 1, b: 2, c: 3 })).toStrictEqual(['a', 'b', 'c'])
     expect(extractKeysFromObject({ j: 9, i: 2, x: 3, z: 4 })).toStrictEqual(['j', 'i', 'x', 'z'])
     expect(extractKeysFromObject({ w: 15, x: 22, y: 13 })).toStrictEqual(['w', 'x', 'y'])
+  })
+
+  test('must sum object values', () => {
+    expect(sumObjectValues({ a: 1, b: 2, c: 3 })).toBe(6)
   })
 })
