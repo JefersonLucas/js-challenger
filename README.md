@@ -133,6 +133,7 @@ All the challenges I've already completed:
 | 03   | Check if one date is earlier than another          | Fundamentals | Dates   | easy       |
 | 03   | Creating Javascript objects two                    | Fundamentals | Objects | easy       |
 | 04   | Extract keys from Javascript object                | Fundamentals | Objects | easy       |
+| 04   | Convert a Set to Array                             | Fundamentals | Sets    | easy       |
 
 ## Stacks
 
