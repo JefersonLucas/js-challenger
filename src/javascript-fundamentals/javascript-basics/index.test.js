@@ -10,7 +10,8 @@ const {
   removeFirstCharacters,
   operatorCompare,
   percentageOfNumber,
-  mathOperators
+  mathOperators,
+  checkNumberIsEven
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -89,5 +90,12 @@ describe('Javascript Basics', () => {
     expect(mathOperators(6, 5, 4, 3, 2, 1)).toBe(10.5)
     expect(mathOperators(6, 2, 1, 4, 2, 3)).toBe(2744)
     expect(mathOperators(2, 3, 6, 4, 2, 3)).toBe(-8)
+  })
+
+  test('must check if number is even', () => {
+    expect(checkNumberIsEven(10)).toBe(true)
+    expect(checkNumberIsEven(-4)).toBe(true)
+    expect(checkNumberIsEven(5)).toBe(false)
+    expect(checkNumberIsEven(-111)).toBe(false)
   })
 })

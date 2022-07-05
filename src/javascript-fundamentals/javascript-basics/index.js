@@ -147,11 +147,11 @@ function percentageOfNumber (a, b) {
 }
 
 /** **Basic JavaScript math operators**
- * is a function that takes 6 values (`a`,`b`,`c`,`d`,`e`,`f`) as arguments.
+ * is a function that takes 6 values (`a`,`b`,`c`,`d`,`e`,`f`) as arguments:
  * - Sum `a` and `b`;
  * - Then substract by `c`;
  * - Then multiply by `d` and divide by `e`;
- * - Finally raise to the power of `f` and return the result;
+ * - Finally raise to the power of `f` and return the result.
  *
  * @param {*} a is a number
  * @param {*} b is a number
@@ -166,6 +166,19 @@ function mathOperators (a, b, c, d, e, f) {
   return ((((a + b) - c) * d) / e) ** f
 }
 
+/** **Check if a number is even**
+ * is a function that takes a number as argument
+ * and if the number is even, return `true`
+ * otherwise, return `false`.
+ *
+ * @param {*} a is number
+ * @returns boolean
+ */
+
+function checkNumberIsEven (a) {
+  return a % 2 === 0
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -178,5 +191,6 @@ module.exports = {
   removeFirstCharacters,
   operatorCompare,
   percentageOfNumber,
-  mathOperators
+  mathOperators,
+  checkNumberIsEven
 }

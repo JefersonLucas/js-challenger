@@ -140,6 +140,7 @@ All the challenges I've already completed:
 | 04   | Remove a specific array element                    | Fundamentals | Arrays  | easy       |
 | 04   | Accessing object properties two                    | Fundamentals | Objects | easy       |
 | 04   | Basic JavaScript math operators                    | Fundamentals | Basics  | easy       |
+| 04   | Check if a number is even                          | Fundamentals | Basics  | easy       |
 
 ## Stacks
 
