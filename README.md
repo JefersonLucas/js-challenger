@@ -105,33 +105,34 @@ Done in 0.00s.
 
 All the challenges I've already completed:
 
-| Days | Challenge     | Category     | Topic  | Difficulty |
-| ---- | ------------- | ------------ | ------ | ---------- |
-| 01 | Sum two numbers | Fundamentals | Basics | easy       |
-| 01 | Comparison operators, strict equality | Fundamentals | Basics | easy |
-| 01 | Get nth character of string | Fundamentals | Basics | easy |
-| 01 | Remove last n characters of string | Fundamentals | Basics | easy |
-| 01 | Get type of value | Fundamentals | Basics | easy |
-| 01 | Accessing object properties one | Fundamentals | Objects | easy |
-| 02 | Get last n characters of string | Fundamentals | Basics | easy |
-| 02 | Get nth element of array | Fundamentals | Arrays | easy |
-| 02 | Get first n elements of an array | Fundamentals | Arrays | easy |
-| 02 | Creating Javascript objects one | Fundamentals | Objects | easy |
-| 02 | Accessing object properties three | Fundamentals | Objects | easy |
-| 02 | Extract first half of string | Fundamentals | Basics | easy |
-| 02 | Count number of elements in JavaScript array | Fundamentals | Arrays | easy |
-| 02 | Get first n characters of string | Fundamentals | Basics | easy |
-| 03 | Count number of negative values in array | Fundamentals | Arrays | easy |
-| 03 | Remove first n characters of string | Fundamentals | Basics | easy |
-| 03 | Remove first n elements of an array | Fundamentals | Arrays | easy |
-| 03 | Multiplication, division, and comparison operators | Fundamentals | Basics | easy |
-| 03 | Sort an array of strings alphabetically | Fundamentals | Basics | easy |
-| 03 | Check if property exists in object | Fundamentals | Basics | easy |
-| 03 | Check if value is present in Set | Fundamentals | Sets | easy |
-| 03 | Get last n elements of an array | Fundamentals | Arrays | easy |
-| 03 | Return the percentage of a number | Fundamentals | Basics | easy |
-| 03 | Check if one date is earlier than another | Fundamentals | Dates | easy |
-| 03 | Creating Javascript objects two | Fundamentals | Objects | easy |
+| Days | Challenge                                          | Category     | Topic   | Difficulty |
+| ---- | -------------------------------------------------- | ------------ | ------- | ---------- |
+| 01   | Sum two numbers                                    | Fundamentals | Basics  | easy       |
+| 01   | Comparison operators, strict equality              | Fundamentals | Basics  | easy       |
+| 01   | Get nth character of string                        | Fundamentals | Basics  | easy       |
+| 01   | Remove last n characters of string                 | Fundamentals | Basics  | easy       |
+| 01   | Get type of value                                  | Fundamentals | Basics  | easy       |
+| 01   | Accessing object properties one                    | Fundamentals | Objects | easy       |
+| 02   | Get last n characters of string                    | Fundamentals | Basics  | easy       |
+| 02   | Get nth element of array                           | Fundamentals | Arrays  | easy       |
+| 02   | Get first n elements of an array                   | Fundamentals | Arrays  | easy       |
+| 02   | Creating Javascript objects one                    | Fundamentals | Objects | easy       |
+| 02   | Accessing object properties three                  | Fundamentals | Objects | easy       |
+| 02   | Extract first half of string                       | Fundamentals | Basics  | easy       |
+| 02   | Count number of elements in JavaScript array       | Fundamentals | Arrays  | easy       |
+| 02   | Get first n characters of string                   | Fundamentals | Basics  | easy       |
+| 03   | Count number of negative values in array           | Fundamentals | Arrays  | easy       |
+| 03   | Remove first n characters of string                | Fundamentals | Basics  | easy       |
+| 03   | Remove first n elements of an array                | Fundamentals | Arrays  | easy       |
+| 03   | Multiplication, division, and comparison operators | Fundamentals | Basics  | easy       |
+| 03   | Sort an array of strings alphabetically            | Fundamentals | Basics  | easy       |
+| 03   | Check if property exists in object                 | Fundamentals | Basics  | easy       |
+| 03   | Check if value is present in Set                   | Fundamentals | Sets    | easy       |
+| 03   | Get last n elements of an array                    | Fundamentals | Arrays  | easy       |
+| 03   | Return the percentage of a number                  | Fundamentals | Basics  | easy       |
+| 03   | Check if one date is earlier than another          | Fundamentals | Dates   | easy       |
+| 03   | Creating Javascript objects two                    | Fundamentals | Objects | easy       |
+| 04   | Extract keys from Javascript object                | Fundamentals | Objects | easy       |
 
 ## Stacks
 

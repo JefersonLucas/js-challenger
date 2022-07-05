@@ -3,7 +3,8 @@ const {
   createObjectOne,
   accessingObjByPropertie,
   checkPropertyExists,
-  createObjects
+  createObjects,
+  extractKeysFromObject
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -33,5 +34,11 @@ describe('Javascript Objects', () => {
     expect(createObjects('a', 'b')).toStrictEqual({ a: 'b' })
     expect(createObjects('z', 'x')).toStrictEqual({ z: 'x' })
     expect(createObjects('b', 'w')).toStrictEqual({ b: 'w' })
+  })
+
+  test('must return an array with all object keys', () => {
+    expect(extractKeysFromObject({ a: 1, b: 2, c: 3 })).toStrictEqual(['a', 'b', 'c'])
+    expect(extractKeysFromObject({ j: 9, i: 2, x: 3, z: 4 })).toStrictEqual(['j', 'i', 'x', 'z'])
+    expect(extractKeysFromObject({ w: 15, x: 22, y: 13 })).toStrictEqual(['w', 'x', 'y'])
   })
 })

@@ -60,10 +60,23 @@ function createObjects (a, b) {
   return { [a]: b }
 }
 
+/** **Extract keys from Javascript object**
+ * is a function that takes an object `a` as argument
+ * and return an array with all object keys.
+ *
+ * @param {*} a is a Object
+ * @returns string[]
+ */
+
+function extractKeysFromObject (a) {
+  return Object.keys(a)
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
   accessingObjByPropertie,
   checkPropertyExists,
-  createObjects
+  createObjects,
+  extractKeysFromObject
 }
