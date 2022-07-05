@@ -5,7 +5,8 @@ const {
   getNegativeNumberOfArray,
   removeFirstElementsOfArray,
   sortElementsAlphabetically,
-  getLastElementOfArray
+  getLastElementOfArray,
+  sortNumberInDescendingOrder
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -48,5 +49,10 @@ describe('Javascript Arrays', () => {
     expect(getLastElementOfArray([1, 2, 3, 4])).toStrictEqual([2, 3, 4])
     expect(getLastElementOfArray([5, 4, 3, 2, 1, 0])).toStrictEqual([2, 1, 0])
     expect(getLastElementOfArray([99, 1, 1])).toStrictEqual([99, 1, 1])
+  })
+
+  test('must sort an array in descending order', () => {
+    expect(sortNumberInDescendingOrder([1, 3, 2])).toStrictEqual([3, 2, 1])
+    expect(sortNumberInDescendingOrder([4, 2, 3, 1])).toStrictEqual([4, 3, 2, 1])
   })
 })

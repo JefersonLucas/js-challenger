@@ -135,6 +135,7 @@ All the challenges I've already completed:
 | 04   | Extract keys from Javascript object                | Fundamentals | Objects | easy       |
 | 04   | Convert a Set to Array                             | Fundamentals | Sets    | easy       |
 | 04   | Sum object values                                  | Fundamentals | Objects | easy       |
+| 04   | Sort an array of numbers in descending order       | Fundamentals | Arrays  | easy       |
 
 ## Stacks
 

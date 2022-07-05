@@ -77,12 +77,23 @@ function sortElementsAlphabetically (arr) {
  *
  * Return the resulting array.
  *
- * @param {*} a is an array
- * @returns array
+ * @param {*} a is an Array
+ * @returns Array
  */
 
 function getLastElementOfArray (a) {
   return a.slice(-3)
+}
+
+/** **Sort an array of numbers in descending order**
+ * is a function that takes an array of numbers as argument
+ * it should return an array with the numbers sorted in descending order.
+ *
+ * @param {*} arr is an Array
+ * @returns number[]
+ */
+function sortNumberInDescendingOrder (arr) {
+  return arr.sort((a, b) => b - a)
 }
 
 module.exports = {
@@ -92,5 +103,6 @@ module.exports = {
   getNegativeNumberOfArray,
   removeFirstElementsOfArray,
   sortElementsAlphabetically,
-  getLastElementOfArray
+  getLastElementOfArray,
+  sortNumberInDescendingOrder
 }
