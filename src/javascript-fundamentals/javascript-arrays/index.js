@@ -1,9 +1,9 @@
 /** **Get nth element of array**
- * is a function that takes an array (a) and a value (n) as argument
+ * is a function that takes an Array `a` and a value `n` as argument.
  *
- * @param {*} a as Array
- * @param {*} n as ntn
- * @returns the nth element of 'a'
+ * @param {*} a is an Array
+ * @param {*} n is an Number
+ * @returns number
  */
 
 function getElementOfArray (a, n) {
@@ -11,11 +11,11 @@ function getElementOfArray (a, n) {
 }
 
 /** **Get first n elements of an array**
- * is a function that takes an array `a` as argument
- * and extract the first 3 elements of `a`
+ * is a function that takes an Array `a` as argument
+ * and extract the first 3 elements of `a`.
  *
  * @param {*} a is an array
- * @returns the first 3 elements of `a`
+ * @returns number[]
  */
 
 function getFirstsElementsOfArray (a) {
@@ -24,10 +24,10 @@ function getFirstsElementsOfArray (a) {
 
 /** **Count number of elements in JavaScript array**
  * is a function that takes an array `a` as argument
- * and return the number of elements in a
+ * and return the number of elements in a.
  *
  * @param {*} a is an array
- * @returns the number of elements in `a`
+ * @returns number
  */
 
 function countNumberOfArray (a) {
@@ -35,10 +35,12 @@ function countNumberOfArray (a) {
 }
 
 /** **Count number of negative values in array**
- * is a function that takes an array of numbers as argument
+ * is a function that takes an array of numbers as argument.
  *
- * @param {*} a is an array
- * @returns the number of negative values in the array
+ * Return the number of negative values in the Array.
+ *
+ * @param {*} a is an Array
+ * @returns number
  */
 
 function getNegativeNumberOfArray (a) {
@@ -47,10 +49,10 @@ function getNegativeNumberOfArray (a) {
 
 /** **Remove first n elements of an array**
  * is a function that takes an array `a` as argument
- * and remove the first 3 elements of `a`
+ * and remove the first 3 elements of `a`.
  *
  * @param {*} a
- * @returns the result
+ * @returns number[]
  */
 
 function removeFirstElementsOfArray (a) {
@@ -58,13 +60,13 @@ function removeFirstElementsOfArray (a) {
 }
 
 /** **Sort an array of strings alphabetically**
- * is a function that takes an array of strings as argument
- * and sort the array elements alphabetically
+ * is a function that takes an Array of Strings as argument
+ * and sort the Array elements alphabetically.
  *
  * Return the result.
  *
- * @param {*} arr is array
- * @returns array
+ * @param {*} arr is Array
+ * @returns string[]
  */
 
 function sortElementsAlphabetically (arr) {
@@ -78,7 +80,7 @@ function sortElementsAlphabetically (arr) {
  * Return the resulting array.
  *
  * @param {*} a is an Array
- * @returns Array
+ * @returns number[]
  */
 
 function getLastElementOfArray (a) {
@@ -92,6 +94,7 @@ function getLastElementOfArray (a) {
  * @param {*} arr is an Array
  * @returns number[]
  */
+
 function sortNumberInDescendingOrder (arr) {
   return arr.sort((a, b) => b - a)
 }
@@ -104,6 +107,7 @@ function sortNumberInDescendingOrder (arr) {
  * @param {*} n is an Number
  * @returns number[]
  */
+
 function getLastArrayElements (a, n) {
   return a.slice(-n)
 }
