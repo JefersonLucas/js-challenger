@@ -11,7 +11,8 @@ const {
   operatorCompare,
   percentageOfNumber,
   mathOperators,
-  checkNumberIsEven
+  checkNumberIsEven,
+  checkIsWholeNumber
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -97,5 +98,12 @@ describe('Javascript Basics', () => {
     expect(checkNumberIsEven(-4)).toBe(true)
     expect(checkNumberIsEven(5)).toBe(false)
     expect(checkNumberIsEven(-111)).toBe(false)
+  })
+
+  test('must check check if a number is a whole number', () => {
+    expect(checkIsWholeNumber(4)).toBe(true)
+    expect(checkIsWholeNumber(1.123)).toBe(false)
+    expect(checkIsWholeNumber(1048)).toBe(true)
+    expect(checkIsWholeNumber(10.48)).toBe(false)
   })
 })

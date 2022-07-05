@@ -179,6 +179,18 @@ function checkNumberIsEven (a) {
   return a % 2 === 0
 }
 
+/** **Check if a number is a whole number**
+ * is a function that takes a number `a` as argument.
+ * If a is a whole number (has no decimal place), return `true`
+ * otherwise, return `false`.
+ *
+ * @param {*} a is a number
+ * @returns boolean
+ */
+function checkIsWholeNumber (a) {
+  return a.toString().indexOf('.') === -1 // Other solution: return a - Math.floor(a) === 0
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -192,5 +204,6 @@ module.exports = {
   operatorCompare,
   percentageOfNumber,
   mathOperators,
-  checkNumberIsEven
+  checkNumberIsEven,
+  checkIsWholeNumber
 }

@@ -145,6 +145,7 @@ All the challenges I've already completed:
 | 04   | Creating Javascript Sets                           | Fundamentals | Sets    | Easy       |
 | 04   | Remove a property from an object                   | Fundamentals | Objects | Easy       |
 | 04   | Merge two objects with matching keys               | Fundamentals | Objects | Medium     |
+| 04   | Check if a number is a whole number                | Fundamentals | Objects | Easy       |
 
 ## Stacks
 
