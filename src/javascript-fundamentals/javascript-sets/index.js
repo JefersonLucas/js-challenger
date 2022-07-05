@@ -23,7 +23,28 @@ function convertSetToArray (set) {
   return [...set]
 }
 
+/** **Creating Javascript Sets**
+ * is a function that takes three elements of any type as arguments
+ * and create a Set from those elements.
+ *
+ * Return the result.
+ *
+ * @param {*} a is an any
+ * @param {*} b is an any
+ * @param {*} c is an any
+ * @returns Set<any>
+ */
+
+function createSets (a, b, c) {
+  const set = new Set()
+  set.add(a)
+  set.add(b)
+  set.add(c)
+  return set
+}
+
 module.exports = {
   checkValueInSet,
-  convertSetToArray
+  convertSetToArray,
+  createSets
 }

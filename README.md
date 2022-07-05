@@ -142,6 +142,7 @@ All the challenges I've already completed:
 | 04   | Basic JavaScript math operators                    | Fundamentals | Basics  | easy       |
 | 04   | Check if a number is even                          | Fundamentals | Basics  | easy       |
 | 04   | Check if two dates are equal                       | Fundamentals | Dates   | easy       |
+| 04   | Creating Javascript Sets                           | Fundamentals | Sets    | easy       |
 
 ## Stacks
 
