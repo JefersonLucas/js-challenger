@@ -7,7 +7,8 @@ const {
   extractKeysFromObject,
   sumObjectValues,
   accessObjectProperty,
-  removePropertyObject
+  removePropertyObject,
+  mergeObjects
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -60,5 +61,10 @@ describe('Javascript Objects', () => {
     expect(removePropertyObject({ a: 1, b: 7, c: 3 })).toStrictEqual({ a: 1, c: 3 })
     expect(removePropertyObject({ b: 0, a: 7, d: 8 })).toStrictEqual({ a: 7, d: 8 })
     expect(removePropertyObject({ e: 6, f: 4, b: 5, a: 3 })).toStrictEqual({ e: 6, f: 4, a: 3 })
+  })
+
+  test('must merge two objects matching key', () => {
+    expect(mergeObjects({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 })).toStrictEqual({ a: 1, b: 2, c: 3, e: 5, d: 4 })
+    expect(mergeObjects({ a: 5, b: 4 }, { c: 3, b: 1, e: 2 })).toStrictEqual({ a: 5, b: 4, c: 3, e: 2, d: 1 })
   })
 })

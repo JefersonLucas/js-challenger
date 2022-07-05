@@ -121,6 +121,26 @@ function removePropertyObject (obj) {
   return obj.b ? object : obj
 }
 
+/** **Merge two objects with matching keys**
+ * is a function that takes two objects as arguments.
+ * Unfortunately, the property `b` in the second object has the wrong key,
+ * it should be named `d` instead
+ * merge both objects and correct the wrong property name.
+ * It should have the properties `a`, `b`, `c`, `d`, and `e`
+ *
+ * Return the resulting object.
+ *
+ * @param {*} x is an object
+ * @param {*} y is an object
+ * @returns object
+ */
+
+function mergeObjects (x, y) {
+  const { b, ...newY } = y
+
+  return { ...x, ...newY, d: b }
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -130,5 +150,6 @@ module.exports = {
   extractKeysFromObject,
   sumObjectValues,
   accessObjectProperty,
-  removePropertyObject
+  removePropertyObject,
+  mergeObjects
 }
