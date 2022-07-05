@@ -139,6 +139,7 @@ All the challenges I've already completed:
 | 04   | Return last n array elements                       | Fundamentals | Arrays  | easy       |
 | 04   | Remove a specific array element                    | Fundamentals | Arrays  | easy       |
 | 04   | Accessing object properties two                    | Fundamentals | Objects | easy       |
+| 04   | Basic JavaScript math operators                    | Fundamentals | Basics  | easy       |
 
 ## Stacks
 

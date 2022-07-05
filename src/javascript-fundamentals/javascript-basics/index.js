@@ -146,6 +146,26 @@ function percentageOfNumber (a, b) {
   return (a * b) / 100 // Other solution: return b / 100 * a
 }
 
+/** **Basic JavaScript math operators**
+ * is a function that takes 6 values (`a`,`b`,`c`,`d`,`e`,`f`) as arguments.
+ * - Sum `a` and `b`;
+ * - Then substract by `c`;
+ * - Then multiply by `d` and divide by `e`;
+ * - Finally raise to the power of `f` and return the result;
+ *
+ * @param {*} a is a number
+ * @param {*} b is a number
+ * @param {*} c is a number
+ * @param {*} d is a number
+ * @param {*} e is a number
+ * @param {*} f is a number
+ * @returns number
+ */
+
+function mathOperators (a, b, c, d, e, f) {
+  return ((((a + b) - c) * d) / e) ** f
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -157,5 +177,6 @@ module.exports = {
   getFirstCharacters,
   removeFirstCharacters,
   operatorCompare,
-  percentageOfNumber
+  percentageOfNumber,
+  mathOperators
 }
