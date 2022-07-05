@@ -96,6 +96,18 @@ function sortNumberInDescendingOrder (arr) {
   return arr.sort((a, b) => b - a)
 }
 
+/** **Return last n array elements**
+ * is a function that takes an Array `a` and a Number `n` as arguments.
+ * It should return the last `n` elements of `a`
+ *
+ * @param {*} a is an Array
+ * @param {*} n is an Number
+ * @returns number[]
+ */
+function getLastArrayElements (a, n) {
+  return a.slice(-n)
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -104,5 +116,6 @@ module.exports = {
   removeFirstElementsOfArray,
   sortElementsAlphabetically,
   getLastElementOfArray,
-  sortNumberInDescendingOrder
+  sortNumberInDescendingOrder,
+  getLastArrayElements
 }

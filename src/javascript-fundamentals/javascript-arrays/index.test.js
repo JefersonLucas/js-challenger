@@ -1,3 +1,4 @@
+const { expect } = require('expect')
 const {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -6,7 +7,8 @@ const {
   removeFirstElementsOfArray,
   sortElementsAlphabetically,
   getLastElementOfArray,
-  sortNumberInDescendingOrder
+  sortNumberInDescendingOrder,
+  getLastArrayElements
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -54,5 +56,11 @@ describe('Javascript Arrays', () => {
   test('must sort an array in descending order', () => {
     expect(sortNumberInDescendingOrder([1, 3, 2])).toStrictEqual([3, 2, 1])
     expect(sortNumberInDescendingOrder([4, 2, 3, 1])).toStrictEqual([4, 3, 2, 1])
+  })
+
+  test('must return the last n Array elements', () => {
+    expect(getLastArrayElements([1, 2, 3, 4, 5], 2)).toStrictEqual([4, 5])
+    expect(getLastArrayElements([1, 2, 3], 6)).toStrictEqual([1, 2, 3])
+    expect(getLastArrayElements([1, 2, 3, 4, 5, 6, 7, 8], 3)).toStrictEqual([6, 7, 8])
   })
 })
