@@ -112,6 +112,21 @@ function getLastArrayElements (a, n) {
   return a.slice(-n)
 }
 
+/** **Remove a specific array element**
+ * is a function that takes an Array `a` and a value `b` as argument.
+ * The function should clean a from all occurrences of `b`.
+ *
+ * Return the filtered array.
+ *
+ * @param {*} a is an array
+ * @param {*} b is any
+ * @returns any[]
+ */
+
+function removeSpecificArrayElement (a, b) {
+  return a.filter((i) => i !== b)
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -121,5 +136,6 @@ module.exports = {
   sortElementsAlphabetically,
   getLastElementOfArray,
   sortNumberInDescendingOrder,
-  getLastArrayElements
+  getLastArrayElements,
+  removeSpecificArrayElement
 }

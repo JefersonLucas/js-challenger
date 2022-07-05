@@ -137,6 +137,7 @@ All the challenges I've already completed:
 | 04   | Sum object values                                  | Fundamentals | Objects | easy       |
 | 04   | Sort an array of numbers in descending order       | Fundamentals | Arrays  | easy       |
 | 04   | Return last n array elements                       | Fundamentals | Arrays  | easy       |
+| 04   | Remove a specific array element                    | Fundamentals | Arrays  | easy       |
 
 ## Stacks
 

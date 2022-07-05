@@ -7,7 +7,8 @@ const {
   sortElementsAlphabetically,
   getLastElementOfArray,
   sortNumberInDescendingOrder,
-  getLastArrayElements
+  getLastArrayElements,
+  removeSpecificArrayElement
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -61,5 +62,12 @@ describe('Javascript Arrays', () => {
     expect(getLastArrayElements([1, 2, 3, 4, 5], 2)).toStrictEqual([4, 5])
     expect(getLastArrayElements([1, 2, 3], 6)).toStrictEqual([1, 2, 3])
     expect(getLastArrayElements([1, 2, 3, 4, 5, 6, 7, 8], 3)).toStrictEqual([6, 7, 8])
+  })
+
+  test('must remove a specific array element', () => {
+    expect(removeSpecificArrayElement([1, 2, 3], 2)).toStrictEqual([1, 3])
+    expect(removeSpecificArrayElement([1, 2, '2'], '2')).toStrictEqual([1, 2])
+    expect(removeSpecificArrayElement([false, '2', 1], false)).toStrictEqual(['2', 1])
+    expect(removeSpecificArrayElement([1, 2, '2', 1], 1)).toStrictEqual([2, '2'])
   })
 })
