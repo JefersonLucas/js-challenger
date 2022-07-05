@@ -6,7 +6,8 @@ const {
   createObjects,
   extractKeysFromObject,
   sumObjectValues,
-  accessObjectPropertie
+  accessObjectProperty,
+  removePropertyObject
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -51,7 +52,13 @@ describe('Javascript Objects', () => {
   })
 
   test('must accessing object properties two', () => {
-    expect(accessObjectPropertie({ one: 1, 'prop-2': 2 })).toBe(2)
-    expect(accessObjectPropertie({ 'prop-2': 'two', prop: 'test' })).toBe('two')
+    expect(accessObjectProperty({ one: 1, 'prop-2': 2 })).toBe(2)
+    expect(accessObjectProperty({ 'prop-2': 'two', prop: 'test' })).toBe('two')
+  })
+
+  test('must remove a property from object', () => {
+    expect(removePropertyObject({ a: 1, b: 7, c: 3 })).toStrictEqual({ a: 1, c: 3 })
+    expect(removePropertyObject({ b: 0, a: 7, d: 8 })).toStrictEqual({ a: 7, d: 8 })
+    expect(removePropertyObject({ e: 6, f: 4, b: 5, a: 3 })).toStrictEqual({ e: 6, f: 4, a: 3 })
   })
 })

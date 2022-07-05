@@ -99,8 +99,26 @@ function sumObjectValues (a) {
  * @returns any
  */
 
-function accessObjectPropertie (obj) {
+function accessObjectProperty (obj) {
   return obj['prop-2']
+}
+
+/** **Remove a property from an object**
+ * is a function that takes an object as argument.
+ * It should return an object with all original object properties
+ * except for the property with key `b`.
+ *
+ * @param {*} obj is object
+ * @returns object
+ */
+
+function removePropertyObject (obj) {
+  // Other solution:
+  // const { b, ...rest } = obj;
+  // return rest;
+
+  const object = delete obj.b
+  return obj.b ? object : obj
 }
 
 module.exports = {
@@ -111,5 +129,6 @@ module.exports = {
   createObjects,
   extractKeysFromObject,
   sumObjectValues,
-  accessObjectPropertie
+  accessObjectProperty,
+  removePropertyObject
 }
