@@ -89,6 +89,20 @@ function sumObjectValues (a) {
   return Object.values(a).reduce((a, b) => a + b, 0)
 }
 
+/** **Accessing object properties two**
+ * is a function that takes an object with two properties as argument.
+ * It should return the value of the property with key `'prop-2'`
+ *
+ * Tipp: you might want to use the square brackets property accessor.
+ *
+ * @param {*} obj is an object
+ * @returns any
+ */
+
+function accessObjectPropertie (obj) {
+  return obj['prop-2']
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -96,5 +110,6 @@ module.exports = {
   checkPropertyExists,
   createObjects,
   extractKeysFromObject,
-  sumObjectValues
+  sumObjectValues,
+  accessObjectPropertie
 }

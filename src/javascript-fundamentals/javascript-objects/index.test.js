@@ -5,7 +5,8 @@ const {
   checkPropertyExists,
   createObjects,
   extractKeysFromObject,
-  sumObjectValues
+  sumObjectValues,
+  accessObjectPropertie
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -20,7 +21,7 @@ describe('Javascript Objects', () => {
     expect(createObjectOne('b')).toStrictEqual({ key: 'b' })
   })
 
-  test('It should return the value of the property with key equal to the value of the string', () => {
+  test('must return the value of the property with key equal to the value of the string', () => {
     expect(accessingObjByPropertie({ continent: 'Asia', country: 'Japan' }, 'continent')).toBe('Asia')
     expect(accessingObjByPropertie({ country: 'Sweden', continent: 'Europe' }, 'country')).toBe('Sweden')
   })
@@ -45,5 +46,12 @@ describe('Javascript Objects', () => {
 
   test('must sum object values', () => {
     expect(sumObjectValues({ a: 1, b: 2, c: 3 })).toBe(6)
+    expect(sumObjectValues({ j: 9, i: 2, x: 3, z: 4 })).toBe(18)
+    expect(sumObjectValues({ w: 15, x: 22, y: 13 })).toBe(50)
+  })
+
+  test('must accessing object properties two', () => {
+    expect(accessObjectPropertie({ one: 1, 'prop-2': 2 })).toBe(2)
+    expect(accessObjectPropertie({ 'prop-2': 'two', prop: 'test' })).toBe('two')
   })
 })
