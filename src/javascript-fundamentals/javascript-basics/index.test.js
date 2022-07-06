@@ -9,7 +9,11 @@ const {
   getFirstCharacters,
   removeFirstCharacters,
   operatorCompare,
-  percentageOfNumber
+  percentageOfNumber,
+  mathOperators,
+  checkNumberIsEven,
+  checkIsWholeNumber,
+  manyTimesCharacterOccur
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -82,5 +86,30 @@ describe('Javascript Basics', () => {
     expect(percentageOfNumber(100, 50)).toBe(50)
     expect(percentageOfNumber(10, 1)).toBe(0.1)
     expect(percentageOfNumber(500, 25)).toBe(125)
+  })
+
+  test('must be math operators', () => {
+    expect(mathOperators(6, 5, 4, 3, 2, 1)).toBe(10.5)
+    expect(mathOperators(6, 2, 1, 4, 2, 3)).toBe(2744)
+    expect(mathOperators(2, 3, 6, 4, 2, 3)).toBe(-8)
+  })
+
+  test('must check if number is even', () => {
+    expect(checkNumberIsEven(10)).toBe(true)
+    expect(checkNumberIsEven(-4)).toBe(true)
+    expect(checkNumberIsEven(5)).toBe(false)
+    expect(checkNumberIsEven(-111)).toBe(false)
+  })
+
+  test('must check check if a number is a whole number', () => {
+    expect(checkIsWholeNumber(4)).toBe(true)
+    expect(checkIsWholeNumber(1.123)).toBe(false)
+    expect(checkIsWholeNumber(1048)).toBe(true)
+    expect(checkIsWholeNumber(10.48)).toBe(false)
+  })
+
+  test('must many times does a character occur', () => {
+    expect(manyTimesCharacterOccur('m', 'how many times does the character occur in this sentence?')).toBe(2)
+    expect(manyTimesCharacterOccur('h', 'how many times does the character occur in this sentence?')).toBe(4)
   })
 })

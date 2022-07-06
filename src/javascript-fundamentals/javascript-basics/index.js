@@ -1,54 +1,79 @@
-/** Sum two numbers
- * Write a function that takes two numbers (a and b) as argument
- * Sum a and b
- * Return the result
+/** **Sum two numbers**
+ * is a function that takes two numbers (`a` and `b`) as argument
+ * and sum `a` and `b`.
+ *
+ * Return the result.
+ *
+ * @param {*} a is a number
+ * @param {*} b is a number
+ * @returns number
  */
 
 function sumTwoNumbers (a, b) {
   return a + b
 }
 
-/** Comparison operators, strict equality
- * Write a function that takes two values, say a and b, as arguments
- * Return true if the two values are equal and of the same type
+/** **Comparison operators, strict equality**
+ * is a function that takes two values, say `a` and `b`, as arguments
+ * and return `true` if the two values are equal and of the same type.
+ *
+ * @param {*} a is string | number
+ * @param {*} b is string | number
+ * @returns boolean
  */
 
 function compareTypes (a, b) {
   return a === b
 }
 
-/** Get nth character of string
- * Write a function that takes a string (a) and a number (n) as argument
- * Return the nth character of 'a'
-*/
+/** **Get nth character of string**
+ * is a function that takes a String `a` and a Number `n` as argument
+ * and return the nth character of `a`.
+ *
+ * @param {*} a is an string
+ * @param {*} n is an number
+ * @returns string
+ */
 
 function nthCharacter (a, n) {
   return a[n - 1]
 }
 
-/** Remove last n characters of string
- * Write a function that takes a string (a) as argument
- * Remove the last 3 characters of a
- * Return the result
+/** **Remove last n characters of string**
+ * is a function that takes a String `a` as argument
+ * and remove the last 3 characters of `a`.
+ *
+ * Return the result.
+ *
+ * @param {*} a is an string
+ * @returns string
  */
 
 function removeLastCharacters (a) {
   return a.slice(0, -3)
 }
 
-/** Get type of value
- * Write a function that takes a value as argument
- * Return the type of the value
+/** **Get type of value**
+ * is a function that takes a value as argument.
+ *
+ * Return the type of the value.
+ *
+ * @param {*} a is any
+ * @returns any
  */
 
 function typeValue (a) {
   return typeof a
 }
 
-/** Get last n characters of string
- * Write a function that takes a string as argument
- * Extract the last 3 characters from the string
- * Return the result
+/** **Get last n characters of string**
+ * is a function that takes a string as argument
+ * and extract the last 3 characters from the string.
+ *
+ * Return the result.
+ *
+ * @param {*} str is an string
+ * @returns string
  */
 
 function extractLastCharacters (str) {
@@ -57,10 +82,10 @@ function extractLastCharacters (str) {
 
 /** **Extract first half of string**
  * is a function that takes a string `a` as argument
- * and extract the first half a
+ * and extract the first half `a`.
  *
  * @param {*} a is a string
- * @returns the result
+ * @returns string
  */
 
 function extractFirstHalf (a) {
@@ -69,10 +94,10 @@ function extractFirstHalf (a) {
 
 /** **Get first n characters of string**
  * is a function that takes a string `a` as argument and g
- * get the first 3 characters of `a`
+ * get the first 3 characters of `a`.
  *
  * @param {*} a is a string
- * @returns the result
+ * @returns string
  */
 
 function getFirstCharacters (a) {
@@ -81,10 +106,10 @@ function getFirstCharacters (a) {
 
 /** **Remove first n characters of string**
  * is a function that takes a string `a` as argument
- * and remove the first 3 characters of `a`
+ * and remove the first 3 characters of `a`.
  *
  * @param {*} a is an string
- * @returns // the result
+ * @returns string
  */
 
 function removeFirstCharacters (a) {
@@ -110,7 +135,7 @@ function operatorCompare (a, b) {
 /** **Return the percentage of a number**
  * is a function that takes two numbers (`a` and `b`) as argument.
  *
- * Return `b` percent of `a`
+ * Return `b` percent of `a`.
  *
  * @param {*} a is a number
  * @param {*} b is a number
@@ -119,6 +144,66 @@ function operatorCompare (a, b) {
 
 function percentageOfNumber (a, b) {
   return (a * b) / 100 // Other solution: return b / 100 * a
+}
+
+/** **Basic JavaScript math operators**
+ * is a function that takes 6 values (`a`,`b`,`c`,`d`,`e`,`f`) as arguments:
+ * - Sum `a` and `b`;
+ * - Then substract by `c`;
+ * - Then multiply by `d` and divide by `e`;
+ * - Finally raise to the power of `f` and return the result.
+ *
+ * @param {*} a is a number
+ * @param {*} b is a number
+ * @param {*} c is a number
+ * @param {*} d is a number
+ * @param {*} e is a number
+ * @param {*} f is a number
+ * @returns number
+ */
+
+function mathOperators (a, b, c, d, e, f) {
+  return ((((a + b) - c) * d) / e) ** f
+}
+
+/** **Check if a number is even**
+ * is a function that takes a number as argument
+ * and if the number is even, return `true`
+ * otherwise, return `false`.
+ *
+ * @param {*} a is number
+ * @returns boolean
+ */
+
+function checkNumberIsEven (a) {
+  return a % 2 === 0
+}
+
+/** **Check if a number is a whole number**
+ * is a function that takes a number `a` as argument.
+ * If a is a whole number (has no decimal place), return `true`
+ * otherwise, return `false`.
+ *
+ * @param {*} a is a number
+ * @returns boolean
+ */
+
+function checkIsWholeNumber (a) {
+  return a.toString().indexOf('.') === -1 // Other solution: return a - Math.floor(a) === 0
+}
+
+/** **How many times does a character occur?**
+ * is a function that takes two strings (`a` and `b`) as arguments.
+ *
+ * Return the number of times `a` occurs in `b`.
+ *
+ * @param {*} a is an string
+ * @param {*} b is an string
+ * @returns number
+ */
+
+function manyTimesCharacterOccur (a, b) {
+  return b.split('').filter((i) => i === a).length // Other solution: return b.split(a).length - 1
 }
 
 module.exports = {
@@ -132,5 +217,9 @@ module.exports = {
   getFirstCharacters,
   removeFirstCharacters,
   operatorCompare,
-  percentageOfNumber
+  percentageOfNumber,
+  mathOperators,
+  checkNumberIsEven,
+  checkIsWholeNumber,
+  manyTimesCharacterOccur
 }
