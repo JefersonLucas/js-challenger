@@ -12,7 +12,8 @@ const {
   percentageOfNumber,
   mathOperators,
   checkNumberIsEven,
-  checkIsWholeNumber
+  checkIsWholeNumber,
+  manyTimesCharacterOccur
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -105,5 +106,10 @@ describe('Javascript Basics', () => {
     expect(checkIsWholeNumber(1.123)).toBe(false)
     expect(checkIsWholeNumber(1048)).toBe(true)
     expect(checkIsWholeNumber(10.48)).toBe(false)
+  })
+
+  test('must many times does a character occur', () => {
+    expect(manyTimesCharacterOccur('m', 'how many times does the character occur in this sentence?')).toBe(2)
+    expect(manyTimesCharacterOccur('h', 'how many times does the character occur in this sentence?')).toBe(4)
   })
 })

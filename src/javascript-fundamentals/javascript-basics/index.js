@@ -187,8 +187,23 @@ function checkNumberIsEven (a) {
  * @param {*} a is a number
  * @returns boolean
  */
+
 function checkIsWholeNumber (a) {
   return a.toString().indexOf('.') === -1 // Other solution: return a - Math.floor(a) === 0
+}
+
+/** **How many times does a character occur?**
+ * is a function that takes two strings (`a` and `b`) as arguments.
+ *
+ * Return the number of times `a` occurs in `b`.
+ *
+ * @param {*} a is an string
+ * @param {*} b is an string
+ * @returns number
+ */
+
+function manyTimesCharacterOccur (a, b) {
+  return b.split('').filter((i) => i === a).length // Other solution: return b.split(a).length - 1
 }
 
 module.exports = {
@@ -205,5 +220,6 @@ module.exports = {
   percentageOfNumber,
   mathOperators,
   checkNumberIsEven,
-  checkIsWholeNumber
+  checkIsWholeNumber,
+  manyTimesCharacterOccur
 }
