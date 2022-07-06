@@ -206,6 +206,23 @@ function manyTimesCharacterOccur (a, b) {
   return b.split('').filter((i) => i === a).length // Other solution: return b.split(a).length - 1
 }
 
+/** **Check whether a string contains another string and concatenate**
+ * is a function that takes two strings (`a` and `b`) as arguments:
+ * - If `a` contains `b`, append `b` to the beginning of `a`;
+ * - If not, append it to the end;
+ * - Return the concatenation.
+ *
+ * @param {*} a is an string
+ * @param {*} b is an string
+ * @returns string
+ */
+
+function stringConcatenate (a, b) {
+  return a.at(0) === ' ' | a.at(-1) === b ? `${b}${a}` : `${a}${b}`
+  // Other solution:
+  // return a.indexOf(b) === -1 ? a + b : b + a
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -221,5 +238,6 @@ module.exports = {
   mathOperators,
   checkNumberIsEven,
   checkIsWholeNumber,
-  manyTimesCharacterOccur
+  manyTimesCharacterOccur,
+  stringConcatenate
 }

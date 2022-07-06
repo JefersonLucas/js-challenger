@@ -13,7 +13,8 @@ const {
   mathOperators,
   checkNumberIsEven,
   checkIsWholeNumber,
-  manyTimesCharacterOccur
+  manyTimesCharacterOccur,
+  stringConcatenate
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -111,5 +112,12 @@ describe('Javascript Basics', () => {
   test('must many times does a character occur', () => {
     expect(manyTimesCharacterOccur('m', 'how many times does the character occur in this sentence?')).toBe(2)
     expect(manyTimesCharacterOccur('h', 'how many times does the character occur in this sentence?')).toBe(4)
+  })
+
+  test('must check whether a string contains another string and concatenate', () => {
+    expect(stringConcatenate('cheese', 'cake')).toBe('cheesecake')
+    expect(stringConcatenate('lips', 's')).toBe('slips')
+    expect(stringConcatenate('Java', 'script')).toBe('Javascript')
+    expect(stringConcatenate(' think, therefore I am', 'I')).toBe('I think, therefore I am')
   })
 })
