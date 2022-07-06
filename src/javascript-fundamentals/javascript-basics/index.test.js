@@ -14,7 +14,8 @@ const {
   checkNumberIsEven,
   checkIsWholeNumber,
   manyTimesCharacterOccur,
-  stringConcatenate
+  stringConcatenate,
+  myFunction
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -119,5 +120,12 @@ describe('Javascript Basics', () => {
     expect(stringConcatenate('lips', 's')).toBe('slips')
     expect(stringConcatenate('Java', 'script')).toBe('Javascript')
     expect(stringConcatenate(' think, therefore I am', 'I')).toBe('I think, therefore I am')
+  })
+
+  test('must round a number to 2 decimal plates', () => {
+    expect(myFunction(2.12397)).toBe(2.12)
+    expect(myFunction(3.136)).toBe(3.14)
+    expect(myFunction(1.12397)).toBe(1.12)
+    expect(myFunction(26.1379)).toBe(26.14)
   })
 })

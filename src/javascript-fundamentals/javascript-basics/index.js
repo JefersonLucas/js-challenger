@@ -223,6 +223,20 @@ function stringConcatenate (a, b) {
   // return a.indexOf(b) === -1 ? a + b : b + a
 }
 
+/**
+ * **Round a number to 2 decimal places**
+ * is a function that takes a number `a` as argument:
+ * - Round `a` to the 2nd digit after the comma
+ * - Return the rounded number.
+ *
+ * @param {Number} a The number as argument.
+ * @returns {Number} The rounded number.
+ */
+
+function myFunction (a) {
+  return Number(a.toFixed(2))
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -239,5 +253,6 @@ module.exports = {
   checkNumberIsEven,
   checkIsWholeNumber,
   manyTimesCharacterOccur,
-  stringConcatenate
+  stringConcatenate,
+  myFunction
 }

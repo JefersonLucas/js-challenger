@@ -148,6 +148,7 @@ All the challenges I've already completed:
 | 04   | Check if a number is a whole number                            | Fundamentals | Objects | Easy       |
 | 04   | How many times does a character occur?                         | Fundamentals | Basics  | Easy       |
 | 05   | Check whether a string contains another string and concatenate | Fundamentals | Basics  | Easy       |
+| 05   | Round a number to 2 decimal places                             | Fundamentals | Basics  | Easy       |
 
 ## Stacks
 
