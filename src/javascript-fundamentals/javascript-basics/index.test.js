@@ -16,7 +16,8 @@ const {
   manyTimesCharacterOccur,
   stringConcatenate,
   roundNumberTwoDecimals,
-  splitNumberIntoDigits
+  splitNumberIntoDigits,
+  joinStrings
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -134,5 +135,11 @@ describe('Javascript Basics', () => {
     expect(splitNumberIntoDigits(10)).toStrictEqual([1, 0])
     expect(splitNumberIntoDigits(931)).toStrictEqual([9, 3, 1])
     expect(splitNumberIntoDigits(193278)).toStrictEqual([1, 9, 3, 2, 7, 8])
+  })
+
+  test('must join string', () => {
+    expect(joinStrings('java', 'tpi%rcs')).toBe('Javascript')
+    expect(joinStrings('c%ountry', 'edis')).toBe('Countryside')
+    expect(joinStrings('down', 'nw%ot')).toBe('Downtown')
   })
 })

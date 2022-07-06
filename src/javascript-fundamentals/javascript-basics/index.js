@@ -266,6 +266,30 @@ function splitNumberIntoDigits (a) {
   return a.toString().split('').map((i) => Number(i))
 }
 
+/**
+ * **Clear up the chaos behind these strings**
+ * is a function that joins these strings together such that they form the following words:
+ * - `'Javascript'`, `'Countryside'`, and `'Downtown'`.
+ *
+ * @param {string} a is an string.
+ * @param {string} b is an string.
+ * @returns {string} join the a with b.
+ */
+
+function joinStrings (a, b) {
+  // Other solution:
+  // const func = x => x.replace('%','');
+  // const first = func(a);
+  // const second = func(b).split('').reverse().join('');
+  // return first.charAt(0).toUpperCase() + first.slice(1) + second;
+
+  const first = a.replace('%', '')
+  const second = b.replace('%', '').split('').reverse().join('').toString()
+  const phrase = first + second
+
+  return phrase[0].toUpperCase() + phrase.substring(1, phrase.length)
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -284,5 +308,6 @@ module.exports = {
   manyTimesCharacterOccur,
   stringConcatenate,
   roundNumberTwoDecimals,
-  splitNumberIntoDigits
+  splitNumberIntoDigits,
+  joinStrings
 }
