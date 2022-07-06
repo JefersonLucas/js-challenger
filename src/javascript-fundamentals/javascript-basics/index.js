@@ -337,7 +337,7 @@ function toCorrectWord (str) {
  *
  * @param {string} a is an string.
  * @param {string} b is an string.
- * @returns {string} the resilting string.
+ * @returns {string} the resulting string.
  */
 
 function insertCharacter (a, b) {
