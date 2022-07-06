@@ -18,7 +18,8 @@ const {
   roundNumberTwoDecimals,
   splitNumberIntoDigits,
   joinStrings,
-  toCorrectWord
+  toCorrectWord,
+  insertCharacter
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -148,5 +149,11 @@ describe('Javascript Basics', () => {
     expect(toCorrectWord('bnchmf')).toBe('coding')
     expect(toCorrectWord('bgddrd')).toBe('cheese')
     expect(toCorrectWord('sdrshmf')).toBe('testing')
+  })
+
+  test('must insert character after every n characters', () => {
+    expect(insertCharacter('1234567', '.')).toBe('1.234.567')
+    expect(insertCharacter('abcde', '$')).toBe('ab$cde')
+    expect(insertCharacter('zxyzxyzxyzxyzxyz', 'w')).toBe('zwxyzwxyzwxyzwxyzwxyz')
   })
 })

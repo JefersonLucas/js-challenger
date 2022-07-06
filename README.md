@@ -152,6 +152,7 @@ All the challenges I've already completed:
 | 05   | Split a number into its digits                                 | Fundamentals | Basics  | Easy       |
 | 05   | Clear up the chaos behind these strings                        | Fundamentals | Basics  | Advanced   |
 | 05   | Find the correct word by incrementing letters in alphabet      | Fundamentals | Basics  | Advanced   |
+| 05   | Insert character after every n characters (backwards)          | Fundamentals | Basics  | Medium     |
 
 ## Stacks
 

@@ -329,6 +329,30 @@ function toCorrectWord (str) {
   return str.split('').map((i) => String.fromCharCode(i.charCodeAt() + 1)).join('')
 }
 
+/**
+ * **Insert character after every n characters (backwards)**
+ * is a function that takes two strings (`a` and `b`) as arguments.
+ * Beginning at the end of `a`, insert `b` after every 3rd character of `a`
+ * and return the resulting string.
+ *
+ * @param {string} a is an string.
+ * @param {string} b is an string.
+ * @returns {string} the resilting string.
+ */
+
+function insertCharacter (a, b) {
+  let phrase = a // A copy of the `a` argument
+
+  const array = [] // This array will be used to receive elements
+
+  while (phrase.length) {
+    array.push(phrase.slice(-3)) // Take the last 3 elements and add them to the array
+    phrase = phrase.slice(0, -3) // Remove the last 3 items
+  }
+
+  return array.reverse().join(b) // Invert the array and add the value of b between the elements
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -349,5 +373,6 @@ module.exports = {
   roundNumberTwoDecimals,
   splitNumberIntoDigits,
   joinStrings,
-  toCorrectWord
+  toCorrectWord,
+  insertCharacter
 }
