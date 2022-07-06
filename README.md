@@ -149,6 +149,7 @@ All the challenges I've already completed:
 | 04   | How many times does a character occur?                         | Fundamentals | Basics  | Easy       |
 | 05   | Check whether a string contains another string and concatenate | Fundamentals | Basics  | Easy       |
 | 05   | Round a number to 2 decimal places                             | Fundamentals | Basics  | Easy       |
+| 05   | Split a number into its digits                                 | Fundamentals | Basics  | Easy       |
 
 ## Stacks
 

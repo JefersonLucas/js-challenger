@@ -15,7 +15,8 @@ const {
   checkIsWholeNumber,
   manyTimesCharacterOccur,
   stringConcatenate,
-  myFunction
+  roundNumberTwoDecimals,
+  splitNumberIntoDigits
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -123,9 +124,15 @@ describe('Javascript Basics', () => {
   })
 
   test('must round a number to 2 decimal plates', () => {
-    expect(myFunction(2.12397)).toBe(2.12)
-    expect(myFunction(3.136)).toBe(3.14)
-    expect(myFunction(1.12397)).toBe(1.12)
-    expect(myFunction(26.1379)).toBe(26.14)
+    expect(roundNumberTwoDecimals(2.12397)).toBe(2.12)
+    expect(roundNumberTwoDecimals(3.136)).toBe(3.14)
+    expect(roundNumberTwoDecimals(1.12397)).toBe(1.12)
+    expect(roundNumberTwoDecimals(26.1379)).toBe(26.14)
+  })
+
+  test('must split a number its digits', () => {
+    expect(splitNumberIntoDigits(10)).toStrictEqual([1, 0])
+    expect(splitNumberIntoDigits(931)).toStrictEqual([9, 3, 1])
+    expect(splitNumberIntoDigits(193278)).toStrictEqual([1, 9, 3, 2, 7, 8])
   })
 })
