@@ -153,6 +153,7 @@ All the challenges I've already completed:
 | 05   | Clear up the chaos behind these strings                        | Fundamentals | Basics  | Advanced   |
 | 05   | Find the correct word by incrementing letters in alphabet      | Fundamentals | Basics  | Advanced   |
 | 05   | Insert character after every n characters (backwards)          | Fundamentals | Basics  | Medium     |
+| 05   | Return the number of days between two dates                    | Fundamentals | Dates   | Medium     |
 
 ## Stacks
 
