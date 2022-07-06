@@ -290,6 +290,45 @@ function joinStrings (a, b) {
   return phrase[0].toUpperCase() + phrase.substring(1, phrase.length)
 }
 
+/**
+ * **Find the correct word by incrementing letters in alphabet**
+ * is a function that takes a string as argument.
+ * As it is, the string has no meaning.
+ * Increment each letter to the next letter in the alphabet
+ * and return the correct word.
+ *
+ * @param {string} str is an string.
+ * @returns {string} the correct word.
+ */
+
+function toCorrectWord (str) {
+  /**
+   * The String.fromCharCode() method
+   * returns a string created to use a specific sequence of Unicode values.
+   *
+   * Using `fromCharCode()`
+   * The following example returns the string "ABC".
+   *
+   * `String.fromCharCode(65, 66, 67);`  // return "ABC"
+   *
+   * reference: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
+   */
+
+  /**
+   * String.prototype.charCodeAt()
+   * The `charCodeAt()` method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
+   *
+   * Using charCodeAt()
+   * The following example returns 65, the Unicode value for A.
+   *
+   * 'ABC'.charCodeAt(0); // returns 65
+   *
+   * refecence: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+   */
+
+  return str.split('').map((i) => String.fromCharCode(i.charCodeAt() + 1)).join('')
+}
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -309,5 +348,6 @@ module.exports = {
   stringConcatenate,
   roundNumberTwoDecimals,
   splitNumberIntoDigits,
-  joinStrings
+  joinStrings,
+  toCorrectWord
 }

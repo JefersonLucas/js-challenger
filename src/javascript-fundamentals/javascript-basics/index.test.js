@@ -17,7 +17,8 @@ const {
   stringConcatenate,
   roundNumberTwoDecimals,
   splitNumberIntoDigits,
-  joinStrings
+  joinStrings,
+  toCorrectWord
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -141,5 +142,11 @@ describe('Javascript Basics', () => {
     expect(joinStrings('java', 'tpi%rcs')).toBe('Javascript')
     expect(joinStrings('c%ountry', 'edis')).toBe('Countryside')
     expect(joinStrings('down', 'nw%ot')).toBe('Downtown')
+  })
+
+  test('must find the correct word', () => {
+    expect(toCorrectWord('bnchmf')).toBe('coding')
+    expect(toCorrectWord('bgddrd')).toBe('cheese')
+    expect(toCorrectWord('sdrshmf')).toBe('testing')
   })
 })
