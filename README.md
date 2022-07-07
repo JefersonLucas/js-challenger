@@ -155,6 +155,10 @@ All the challenges I've already completed:
 | 05   | Insert character after every n characters (backwards)          | Fundamentals | Basics  | Medium     |
 | 05   | Return the number of days between two dates                    | Fundamentals | Dates   | Medium     |
 | 05   | Multiply all object values by x                                | Fundamentals | Objects | Medium     |
+| 06   | Return the average of an array of numbers                      | Fundamentals | Arrays  | Easy       |
+| 06   | Return the longest string from an array of strings             | Fundamentals | Arrays  | Easy       |
+| 06   | Create a range of numbers                                      | Fundamentals | Arrays  | Medium     |
+| 06   | Check if all array elements are equal                          | Fundamentals | Arrays  | Easy       |
 
 ## Stacks
 

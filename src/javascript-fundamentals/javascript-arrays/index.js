@@ -135,6 +135,94 @@ function removeSpecificArrayElement (a, b) {
   return a.filter((i) => i !== b)
 }
 
+/**
+ * **Return the average of an array of numbers**
+ * is a function that takes an array of numbers as argument.
+ * It should return the average of the numbers.
+ *
+ * @param {number[]} arr is an array of numbers.
+ * @returns {number} the average of the numbers.
+ */
+
+function averageArrayOfNumbers (arr) {
+  return arr.reduce((a, b) => a + b, 0) / arr.length
+}
+
+/**
+ * **Return the longest string from an array of strings**
+ * is a function that takes an array of strings as argument.
+ * Return the longest string.
+
+ * @param {string[]} arr is an array of strings.
+ * @returns {string} the longest string;
+ */
+
+function longestStringOnArray (arr) {
+  let longest = ''
+
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i]
+
+    if (element.length > longest.length) {
+      longest = element
+    }
+  }
+
+  return longest
+  // Other solution: return arr.reduce((a, b) => a.length <= b.length ? b : a)
+}
+
+/**
+ * **Create a range of numbers**
+ * is a function that takes two numbers (`min` and `max`) as arguments.
+ * Return an array of numbers in the range min to max.
+ *
+ * @param {number} min is an number.
+ * @param {number} max is an number.
+ * @returns {number[]} an array of numbers in the range min to max.
+ */
+
+function rangeOfNumbers (min, max) {
+  const range = []
+
+  for (let i = min; i <= max; i++) range.push(i)
+
+  return range
+}
+
+/**
+ * **Check if all array elements are equal**
+ * is a function that takes an array as argument.
+ * It should return true if all elements in the array are equal.
+ * It should return false otherwise.
+ *
+ * @param {array} arr
+ * @returns {boolean}
+ */
+
+/**
+ * **Check if all array elements are equal**
+ * is a function that takes an array as argument.
+ * - It should return true
+ *  if all elements in the array are equal.
+ * - It should return false otherwise.
+ *
+ * @param {Array<string | number>} arr is an array of string or number.
+ * @returns {boolean} if all elements in the array are equal.
+ */
+
+function checkAllElementsAreEqual (arr) {
+  const arrUniq = new Set()
+
+  arr.forEach(e => {
+    arrUniq.add(e)
+  })
+
+  const result = [...arrUniq.values()]
+
+  return !(result.length > 1)
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -145,5 +233,9 @@ module.exports = {
   getLastElementOfArray,
   sortNumberInDescendingOrder,
   getLastArrayElements,
-  removeSpecificArrayElement
+  removeSpecificArrayElement,
+  averageArrayOfNumbers,
+  longestStringOnArray,
+  rangeOfNumbers,
+  checkAllElementsAreEqual
 }

@@ -1,3 +1,4 @@
+const { expect } = require('expect')
 const {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -8,7 +9,11 @@ const {
   getLastElementOfArray,
   sortNumberInDescendingOrder,
   getLastArrayElements,
-  removeSpecificArrayElement
+  removeSpecificArrayElement,
+  averageArrayOfNumbers,
+  longestStringOnArray,
+  rangeOfNumbers,
+  checkAllElementsAreEqual
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -69,5 +74,30 @@ describe('Javascript Arrays', () => {
     expect(removeSpecificArrayElement([1, 2, '2'], '2')).toStrictEqual([1, 2])
     expect(removeSpecificArrayElement([false, '2', 1], false)).toStrictEqual(['2', 1])
     expect(removeSpecificArrayElement([1, 2, '2', 1], 1)).toStrictEqual([2, '2'])
+  })
+
+  test('must return the average of an array of numbers', () => {
+    expect(averageArrayOfNumbers([10, 100, 40])).toBe(50)
+    expect(averageArrayOfNumbers([10, 100, 1000])).toBe(370)
+    expect(averageArrayOfNumbers([-50, 0, 50, 200])).toBe(50)
+  })
+
+  test('must return the longest string', () => {
+    expect(longestStringOnArray(['help', 'me'])).toBe('help')
+    expect(longestStringOnArray(['I', 'need', 'candy'])).toBe('candy')
+  })
+
+  test('must create a range of numbers', () => {
+    expect(rangeOfNumbers(2, 10)).toStrictEqual([2, 3, 4, 5, 6, 7, 8, 9, 10])
+    expect(rangeOfNumbers(1, 3)).toStrictEqual([1, 2, 3])
+    expect(rangeOfNumbers(-5, 5)).toStrictEqual([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5])
+    expect(rangeOfNumbers(2, 7)).toStrictEqual([2, 3, 4, 5, 6, 7])
+  })
+
+  test('must check if all array elements are equal', () => {
+    expect(checkAllElementsAreEqual([true, true])).toBe(true)
+    expect(checkAllElementsAreEqual(['test', 'test'])).toBe(true)
+    expect(checkAllElementsAreEqual([1, 2])).toBe(false)
+    expect(checkAllElementsAreEqual(['10', 10])).toBe(false)
   })
 })
