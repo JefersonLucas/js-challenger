@@ -1,3 +1,4 @@
+const { expect } = require('expect')
 const {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -11,7 +12,8 @@ const {
   removeSpecificArrayElement,
   averageArrayOfNumbers,
   longestStringOnArray,
-  rangeOfNumbers
+  rangeOfNumbers,
+  checkAllElementsAreEqual
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -90,5 +92,12 @@ describe('Javascript Arrays', () => {
     expect(rangeOfNumbers(1, 3)).toStrictEqual([1, 2, 3])
     expect(rangeOfNumbers(-5, 5)).toStrictEqual([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5])
     expect(rangeOfNumbers(2, 7)).toStrictEqual([2, 3, 4, 5, 6, 7])
+  })
+
+  test('must check if all array elements are equal', () => {
+    expect(checkAllElementsAreEqual([true, true])).toBe(true)
+    expect(checkAllElementsAreEqual(['test', 'test'])).toBe(true)
+    expect(checkAllElementsAreEqual([1, 2])).toBe(false)
+    expect(checkAllElementsAreEqual(['10', 10])).toBe(false)
   })
 })

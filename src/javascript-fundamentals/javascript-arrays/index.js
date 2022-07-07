@@ -190,6 +190,39 @@ function rangeOfNumbers (min, max) {
   return range
 }
 
+/**
+ * **Check if all array elements are equal**
+ * is a function that takes an array as argument.
+ * It should return true if all elements in the array are equal.
+ * It should return false otherwise.
+ *
+ * @param {array} arr
+ * @returns {boolean}
+ */
+
+/**
+ * **Check if all array elements are equal**
+ * is a function that takes an array as argument.
+ * - It should return true
+ *  if all elements in the array are equal.
+ * - It should return false otherwise.
+ *
+ * @param {Array<string | number>} arr is an array of string or number.
+ * @returns {boolean} if all elements in the array are equal.
+ */
+
+function checkAllElementsAreEqual (arr) {
+  const arrUniq = new Set()
+
+  arr.forEach(e => {
+    arrUniq.add(e)
+  })
+
+  const result = [...arrUniq.values()]
+
+  return !(result.length > 1)
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -203,5 +236,6 @@ module.exports = {
   removeSpecificArrayElement,
   averageArrayOfNumbers,
   longestStringOnArray,
-  rangeOfNumbers
+  rangeOfNumbers,
+  checkAllElementsAreEqual
 }

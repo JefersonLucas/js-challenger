@@ -158,6 +158,7 @@ All the challenges I've already completed:
 | 06   | Return the average of an array of numbers                      | Fundamentals | Arrays  | Easy       |
 | 06   | Return the longest string from an array of strings             | Fundamentals | Arrays  | Easy       |
 | 06   | Create a range of numbers                                      | Fundamentals | Arrays  | Medium     |
+| 06   | Check if all array elements are equal                          | Fundamentals | Arrays  | Easy       |
 
 ## Stacks
 
