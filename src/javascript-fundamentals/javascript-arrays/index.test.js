@@ -9,7 +9,8 @@ const {
   sortNumberInDescendingOrder,
   getLastArrayElements,
   removeSpecificArrayElement,
-  averageArrayOfNumbers
+  averageArrayOfNumbers,
+  myFunction
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -76,5 +77,10 @@ describe('Javascript Arrays', () => {
     expect(averageArrayOfNumbers([10, 100, 40])).toBe(50)
     expect(averageArrayOfNumbers([10, 100, 1000])).toBe(370)
     expect(averageArrayOfNumbers([-50, 0, 50, 200])).toBe(50)
+  })
+
+  test('must return the longest string', () => {
+    expect(myFunction(['help', 'me'])).toBe('help')
+    expect(myFunction(['I', 'need', 'candy'])).toBe('candy')
   })
 })

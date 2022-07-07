@@ -148,6 +148,32 @@ function averageArrayOfNumbers (arr) {
   return arr.reduce((a, b) => a + b, 0) / arr.length
 }
 
+/**
+ * **Return the longest string from an array of strings**
+ * is a function that takes an array of strings as argument.
+ * Return the longest string.
+
+ * @param {string[]} arr is an array of strings.
+ * @returns {string} the longest string;
+ */
+
+function myFunction (arr) {
+  let longest = ''
+
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i]
+
+    if (element.length > longest.length) {
+      longest = element
+    }
+  }
+
+  return longest
+  // Other solution: return arr.reduce((a, b) => a.length <= b.length ? b : a)
+}
+
+console.log(myFunction(['I', 'need', 'candy']))
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -159,5 +185,6 @@ module.exports = {
   sortNumberInDescendingOrder,
   getLastArrayElements,
   removeSpecificArrayElement,
-  averageArrayOfNumbers
+  averageArrayOfNumbers,
+  myFunction
 }
