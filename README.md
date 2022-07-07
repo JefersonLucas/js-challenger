@@ -157,6 +157,7 @@ All the challenges I've already completed:
 | 05   | Multiply all object values by x                                | Fundamentals | Objects | Medium     |
 | 06   | Return the average of an array of numbers                      | Fundamentals | Arrays  | Easy       |
 | 06   | Return the longest string from an array of strings             | Fundamentals | Arrays  | Easy       |
+| 06   | Create a range of numbers                                      | Fundamentals | Arrays  | Medium     |
 
 ## Stacks
 

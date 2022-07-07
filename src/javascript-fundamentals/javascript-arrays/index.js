@@ -157,7 +157,7 @@ function averageArrayOfNumbers (arr) {
  * @returns {string} the longest string;
  */
 
-function myFunction (arr) {
+function longestStringOnArray (arr) {
   let longest = ''
 
   for (let i = 0; i < arr.length; i++) {
@@ -172,7 +172,23 @@ function myFunction (arr) {
   // Other solution: return arr.reduce((a, b) => a.length <= b.length ? b : a)
 }
 
-console.log(myFunction(['I', 'need', 'candy']))
+/**
+ * **Create a range of numbers**
+ * is a function that takes two numbers (`min` and `max`) as arguments.
+ * Return an array of numbers in the range min to max.
+ *
+ * @param {number} min is an number.
+ * @param {number} max is an number.
+ * @returns {number[]} an array of numbers in the range min to max.
+ */
+
+function rangeOfNumbers (min, max) {
+  const range = []
+
+  for (let i = min; i <= max; i++) range.push(i)
+
+  return range
+}
 
 module.exports = {
   getElementOfArray,
@@ -186,5 +202,6 @@ module.exports = {
   getLastArrayElements,
   removeSpecificArrayElement,
   averageArrayOfNumbers,
-  myFunction
+  longestStringOnArray,
+  rangeOfNumbers
 }

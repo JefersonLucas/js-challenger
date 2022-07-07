@@ -10,7 +10,8 @@ const {
   getLastArrayElements,
   removeSpecificArrayElement,
   averageArrayOfNumbers,
-  myFunction
+  longestStringOnArray,
+  rangeOfNumbers
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -80,7 +81,14 @@ describe('Javascript Arrays', () => {
   })
 
   test('must return the longest string', () => {
-    expect(myFunction(['help', 'me'])).toBe('help')
-    expect(myFunction(['I', 'need', 'candy'])).toBe('candy')
+    expect(longestStringOnArray(['help', 'me'])).toBe('help')
+    expect(longestStringOnArray(['I', 'need', 'candy'])).toBe('candy')
+  })
+
+  test('must create a range of numbers', () => {
+    expect(rangeOfNumbers(2, 10)).toStrictEqual([2, 3, 4, 5, 6, 7, 8, 9, 10])
+    expect(rangeOfNumbers(1, 3)).toStrictEqual([1, 2, 3])
+    expect(rangeOfNumbers(-5, 5)).toStrictEqual([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5])
+    expect(rangeOfNumbers(2, 7)).toStrictEqual([2, 3, 4, 5, 6, 7])
   })
 })
