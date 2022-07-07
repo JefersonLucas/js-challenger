@@ -8,7 +8,8 @@ const {
   getLastElementOfArray,
   sortNumberInDescendingOrder,
   getLastArrayElements,
-  removeSpecificArrayElement
+  removeSpecificArrayElement,
+  averageArrayOfNumbers
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -69,5 +70,11 @@ describe('Javascript Arrays', () => {
     expect(removeSpecificArrayElement([1, 2, '2'], '2')).toStrictEqual([1, 2])
     expect(removeSpecificArrayElement([false, '2', 1], false)).toStrictEqual(['2', 1])
     expect(removeSpecificArrayElement([1, 2, '2', 1], 1)).toStrictEqual([2, '2'])
+  })
+
+  test('must return the average of an array of numbers', () => {
+    expect(averageArrayOfNumbers([10, 100, 40])).toBe(50)
+    expect(averageArrayOfNumbers([10, 100, 1000])).toBe(370)
+    expect(averageArrayOfNumbers([-50, 0, 50, 200])).toBe(50)
   })
 })

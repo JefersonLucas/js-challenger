@@ -155,6 +155,7 @@ All the challenges I've already completed:
 | 05   | Insert character after every n characters (backwards)          | Fundamentals | Basics  | Medium     |
 | 05   | Return the number of days between two dates                    | Fundamentals | Dates   | Medium     |
 | 05   | Multiply all object values by x                                | Fundamentals | Objects | Medium     |
+| 06   | Return the average of an array of numbers                      | Fundamentals | Arrays  | Easy       |
 
 ## Stacks
 

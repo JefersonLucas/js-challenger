@@ -135,6 +135,19 @@ function removeSpecificArrayElement (a, b) {
   return a.filter((i) => i !== b)
 }
 
+/**
+ * **Return the average of an array of numbers**
+ * is a function that takes an array of numbers as argument.
+ * It should return the average of the numbers.
+ *
+ * @param {number[]} arr is an array of numbers.
+ * @returns {number} the average of the numbers.
+ */
+
+function averageArrayOfNumbers (arr) {
+  return arr.reduce((a, b) => a + b, 0) / arr.length
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -145,5 +158,6 @@ module.exports = {
   getLastElementOfArray,
   sortNumberInDescendingOrder,
   getLastArrayElements,
-  removeSpecificArrayElement
+  removeSpecificArrayElement,
+  averageArrayOfNumbers
 }
