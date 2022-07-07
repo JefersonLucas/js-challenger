@@ -13,7 +13,13 @@ const {
   mathOperators,
   checkNumberIsEven,
   checkIsWholeNumber,
-  manyTimesCharacterOccur
+  manyTimesCharacterOccur,
+  stringConcatenate,
+  roundNumberTwoDecimals,
+  splitNumberIntoDigits,
+  joinStrings,
+  toCorrectWord,
+  insertCharacter
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -111,5 +117,43 @@ describe('Javascript Basics', () => {
   test('must many times does a character occur', () => {
     expect(manyTimesCharacterOccur('m', 'how many times does the character occur in this sentence?')).toBe(2)
     expect(manyTimesCharacterOccur('h', 'how many times does the character occur in this sentence?')).toBe(4)
+  })
+
+  test('must check whether a string contains another string and concatenate', () => {
+    expect(stringConcatenate('cheese', 'cake')).toBe('cheesecake')
+    expect(stringConcatenate('lips', 's')).toBe('slips')
+    expect(stringConcatenate('Java', 'script')).toBe('Javascript')
+    expect(stringConcatenate(' think, therefore I am', 'I')).toBe('I think, therefore I am')
+  })
+
+  test('must round a number to 2 decimal plates', () => {
+    expect(roundNumberTwoDecimals(2.12397)).toBe(2.12)
+    expect(roundNumberTwoDecimals(3.136)).toBe(3.14)
+    expect(roundNumberTwoDecimals(1.12397)).toBe(1.12)
+    expect(roundNumberTwoDecimals(26.1379)).toBe(26.14)
+  })
+
+  test('must split a number its digits', () => {
+    expect(splitNumberIntoDigits(10)).toStrictEqual([1, 0])
+    expect(splitNumberIntoDigits(931)).toStrictEqual([9, 3, 1])
+    expect(splitNumberIntoDigits(193278)).toStrictEqual([1, 9, 3, 2, 7, 8])
+  })
+
+  test('must join string', () => {
+    expect(joinStrings('java', 'tpi%rcs')).toBe('Javascript')
+    expect(joinStrings('c%ountry', 'edis')).toBe('Countryside')
+    expect(joinStrings('down', 'nw%ot')).toBe('Downtown')
+  })
+
+  test('must find the correct word', () => {
+    expect(toCorrectWord('bnchmf')).toBe('coding')
+    expect(toCorrectWord('bgddrd')).toBe('cheese')
+    expect(toCorrectWord('sdrshmf')).toBe('testing')
+  })
+
+  test('must insert character after every n characters', () => {
+    expect(insertCharacter('1234567', '.')).toBe('1.234.567')
+    expect(insertCharacter('abcde', '$')).toBe('ab$cde')
+    expect(insertCharacter('zxyzxyzxyzxyzxyz', 'w')).toBe('zwxyzwxyzwxyzwxyzwxyz')
   })
 })

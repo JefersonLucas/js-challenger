@@ -8,7 +8,8 @@ const {
   sumObjectValues,
   accessObjectProperty,
   removePropertyObject,
-  mergeObjects
+  mergeObjects,
+  multiplyObjectValues
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -66,5 +67,11 @@ describe('Javascript Objects', () => {
   test('must merge two objects matching key', () => {
     expect(mergeObjects({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 })).toStrictEqual({ a: 1, b: 2, c: 3, e: 5, d: 4 })
     expect(mergeObjects({ a: 5, b: 4 }, { c: 3, b: 1, e: 2 })).toStrictEqual({ a: 5, b: 4, c: 3, e: 2, d: 1 })
+  })
+
+  test('must multiply all object values by x', () => {
+    expect(multiplyObjectValues({ a: 1, b: 2, c: 3 }, 3)).toStrictEqual({ a: 3, b: 6, c: 9 })
+    expect(multiplyObjectValues({ j: 9, i: 2, x: 3, z: 4 }, 10)).toStrictEqual({ j: 90, i: 20, x: 30, z: 40 })
+    expect(multiplyObjectValues({ w: 15, x: 22, y: 13 }, 6)).toStrictEqual({ w: 90, x: 132, y: 78 })
   })
 })

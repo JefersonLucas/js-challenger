@@ -1,6 +1,7 @@
 const {
   checkDate,
-  checkDatesAreEqual
+  checkDatesAreEqual,
+  differenceInDays
 } = require('./')
 
 describe('Javascript Dates', () => {
@@ -14,5 +15,10 @@ describe('Javascript Dates', () => {
     expect(checkDatesAreEqual(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:45:00'))).toBe(false)
     expect(checkDatesAreEqual(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:00:00'))).toBe(true)
     expect(checkDatesAreEqual(new Date('2001/01/01 08:00:00'), new Date('2000/01/01 08:00:00'))).toBe(false)
+  })
+
+  test('it should return the difference of days between the dates', () => {
+    expect(differenceInDays(new Date('2020-06-11'), new Date('2020-06-01'))).toBe(10)
+    expect(differenceInDays(new Date('2000-01-01'), new Date('2020-06-01'))).toBe(7457)
   })
 })
