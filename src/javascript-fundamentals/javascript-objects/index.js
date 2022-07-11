@@ -166,6 +166,85 @@ function multiplyObjectValues (a, b) {
   }, {})
 }
 
+/**
+ * **Creating Javascript objects three**
+ * is a function that takes two arrays (`a` and `b`) as arguments.
+ * Return an object that has properties with keys `a` and corresponding values `b`.
+ *
+ * @param {Array<string | number>} a is an array of string or number.
+ * @param {Array<string | number>} b is an array of string or number.
+ * @returns {object} the object that has properties with keys `a` and corresponding values `b`.
+ */
+
+function createObjectThree (a, b) {
+  const object = {}
+
+  for (let i = 0; i < a.length; i++) {
+    object[a[i]] = b[i]
+  }
+
+  return object
+
+  // Other solution:  return a.reduce((acc, cur, i) => ({ ...acc, [cur]: b[i] }), {});
+}
+
+/**
+ * **Swap object keys and values**
+ * is a function that takes an `object` as argument.
+ * Somehow, the properties and keys of the object got mixed up.
+ * Swap the Javascript object's key with its values and return the resulting object.
+ *
+ * @param {object} obj is an object.
+ * @returns {object} the object with the keys and values exchanged.
+ */
+
+function swapObject (obj) {
+  const object = {}
+  const keys = Object.keys(obj)
+  const values = Object.values(obj)
+
+  for (let i = 0; i < keys.length; i++) {
+    object[values[i]] = keys[i]
+  }
+
+  return object
+
+  // Other solution
+  // return Object.entries(obj).reduce((acc, [key, val]) => {
+  //   return { ...acc, [val]: key };
+  // }, {});
+}
+
+/**
+ * **Replace empty strings in object with null values**
+ * is a function that takes an object as argument.
+ * Some of the property values contain empty strings.
+ * Replace empty strings and strings that contain only whitespace with null values.
+ * Return the resulting object.
+ *
+ * @param {object} obj is an object.
+ * @returns {object} the object with empty strings and strings that contain only blanks for null values.
+ */
+
+function replaceEmptyValues (obj) {
+  const object = {}
+  const keys = Object.keys(obj)
+  const values = Object.values(obj)
+
+  for (let i = 0; i < keys.length; i++) {
+    values[i].trim() === '' ? object[keys[i]] = null : object[keys[i]] = values[i]
+  }
+
+  return object
+
+  // Other solution:
+  // const newObj = { ...obj }
+  // for (key in newObj) {
+  //   if (newObj[key].trim() === '') newObj[key] = null
+  // }
+  // return newObj
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -177,5 +256,8 @@ module.exports = {
   accessObjectProperty,
   removePropertyObject,
   mergeObjects,
-  multiplyObjectValues
+  multiplyObjectValues,
+  createObjectThree,
+  swapObject,
+  replaceEmptyValues
 }

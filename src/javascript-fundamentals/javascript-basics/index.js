@@ -353,6 +353,45 @@ function insertCharacter (a, b) {
   return array.reverse().join(b) // Invert the array and add the value of b between the elements
 }
 
+/**
+ * **Return the next higher prime number**
+ * is a function that takes a number `a` as argument:
+ * - If a is prime, return `a`.
+ * - If not, return the next higher prime number.
+ *
+ * @param {number} a is an number
+ * @returns {number} the prime number or the next higher prime number.
+ */
+
+function nextHigherPrimeNumber (a) {
+  let number = a
+
+  /**
+   * **isPrimeNumber**
+   * is a function that takes the parameter `num`
+   * and returns whether that value is a prime number or not.
+   *
+   * @param {number} num is an number.
+   * @returns {boolean} whether that value is a prime number or not.
+   */
+
+  const isPrimeNumber = (num) => {
+    for (let index = 2; index <= Math.sqrt(num); index++) {
+      if (num % index === 0) return false
+    }
+    return num > 1
+  }
+
+  while (!isPrimeNumber(number)) number++
+
+  return number
+}
+
+console.log(nextHigherPrimeNumber(38))
+console.log(nextHigherPrimeNumber(7))
+console.log(nextHigherPrimeNumber(115))
+console.log(nextHigherPrimeNumber(2000))
+
 module.exports = {
   sumTwoNumbers,
   compareTypes,
@@ -374,5 +413,6 @@ module.exports = {
   splitNumberIntoDigits,
   joinStrings,
   toCorrectWord,
-  insertCharacter
+  insertCharacter,
+  nextHigherPrimeNumber
 }

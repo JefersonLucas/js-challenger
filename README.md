@@ -159,6 +159,11 @@ All the challenges I've already completed:
 | 06   | Return the longest string from an array of strings             | Fundamentals | Arrays  | Easy       |
 | 06   | Create a range of numbers                                      | Fundamentals | Arrays  | Medium     |
 | 06   | Check if all array elements are equal                          | Fundamentals | Arrays  | Easy       |
+| 07   | Merge an arbitrary number of arrays                            | Fundamentals | Arrays  | Easy       |
+| 07   | Creating Javascript objects three                              | Fundamentals | Objects | Easy       |
+| 07   | Swap object keys and values                                    | Fundamentals | Objects | Medium     |
+| 07   | Replace empty strings in object with null values               | Fundamentals | Objects | Medium     |
+| 07   | Return the next higher prime number                            | Fundamentals | Objects | Advanced   |
 
 ## Stacks
 

@@ -19,7 +19,8 @@ const {
   splitNumberIntoDigits,
   joinStrings,
   toCorrectWord,
-  insertCharacter
+  insertCharacter,
+  nextHigherPrimeNumber
 } = require('./')
 
 describe('Javascript Basics', () => {
@@ -155,5 +156,12 @@ describe('Javascript Basics', () => {
     expect(insertCharacter('1234567', '.')).toBe('1.234.567')
     expect(insertCharacter('abcde', '$')).toBe('ab$cde')
     expect(insertCharacter('zxyzxyzxyzxyzxyz', 'w')).toBe('zwxyzwxyzwxyzwxyzwxyz')
+  })
+
+  test('must return the next prime number', () => {
+    expect(nextHigherPrimeNumber(38)).toBe(41)
+    expect(nextHigherPrimeNumber(7)).toBe(7)
+    expect(nextHigherPrimeNumber(115)).toBe(127)
+    expect(nextHigherPrimeNumber(2000)).toBe(2003)
   })
 })

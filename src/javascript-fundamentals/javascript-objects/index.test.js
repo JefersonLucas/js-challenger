@@ -9,7 +9,10 @@ const {
   accessObjectProperty,
   removePropertyObject,
   mergeObjects,
-  multiplyObjectValues
+  multiplyObjectValues,
+  createObjectThree,
+  swapObject,
+  replaceEmptyValues
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -73,5 +76,23 @@ describe('Javascript Objects', () => {
     expect(multiplyObjectValues({ a: 1, b: 2, c: 3 }, 3)).toStrictEqual({ a: 3, b: 6, c: 9 })
     expect(multiplyObjectValues({ j: 9, i: 2, x: 3, z: 4 }, 10)).toStrictEqual({ j: 90, i: 20, x: 30, z: 40 })
     expect(multiplyObjectValues({ w: 15, x: 22, y: 13 }, 6)).toStrictEqual({ w: 90, x: 132, y: 78 })
+  })
+
+  test('must create an object taking from two arrays', () => {
+    expect(createObjectThree(['a', 'b', 'c'], [1, 2, 3])).toStrictEqual({ a: 1, b: 2, c: 3 })
+    expect(createObjectThree(['w', 'x', 'y', 'z'], [10, 9, 5, 2])).toStrictEqual({ w: 10, x: 9, y: 5, z: 2 })
+    expect(createObjectThree([1, 'b'], ['a', 2])).toStrictEqual({ 1: 'a', b: 2 })
+  })
+
+  test('must swap object keys and values', () => {
+    expect(swapObject({ z: 'a', y: 'b', x: 'c', w: 'd' })).toStrictEqual({ a: 'z', b: 'y', c: 'x', d: 'w' })
+    expect(swapObject({ 2: 'a', 4: 'b', 6: 'c', 8: 'd' })).toStrictEqual({ a: '2', b: '4', c: '6', d: '8' })
+    expect(swapObject({ a: 1, z: 24 })).toStrictEqual({ 1: 'a', 24: 'z' })
+  })
+
+  test('must replace empty string in object with null values', () => {
+    expect(replaceEmptyValues({ a: 'a', b: 'b', c: '' })).toStrictEqual({ a: 'a', b: 'b', c: null })
+    expect(replaceEmptyValues({ a: '', b: 'b', c: ' ', d: 'd' })).toStrictEqual({ a: null, b: 'b', c: null, d: 'd' })
+    expect(replaceEmptyValues({ a: 'a', b: 'b ', c: ' ', d: '' })).toStrictEqual({ a: 'a', b: 'b ', c: null, d: null })
   })
 })
