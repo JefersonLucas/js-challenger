@@ -11,7 +11,8 @@ const {
   mergeObjects,
   multiplyObjectValues,
   createObjectThree,
-  swapObject
+  swapObject,
+  replaceEmptyValues
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -87,5 +88,11 @@ describe('Javascript Objects', () => {
     expect(swapObject({ z: 'a', y: 'b', x: 'c', w: 'd' })).toStrictEqual({ a: 'z', b: 'y', c: 'x', d: 'w' })
     expect(swapObject({ 2: 'a', 4: 'b', 6: 'c', 8: 'd' })).toStrictEqual({ a: '2', b: '4', c: '6', d: '8' })
     expect(swapObject({ a: 1, z: 24 })).toStrictEqual({ 1: 'a', 24: 'z' })
+  })
+
+  test('must replace empty string in object with null values', () => {
+    expect(replaceEmptyValues({ a: 'a', b: 'b', c: '' })).toStrictEqual({ a: 'a', b: 'b', c: null })
+    expect(replaceEmptyValues({ a: '', b: 'b', c: ' ', d: 'd' })).toStrictEqual({ a: null, b: 'b', c: null, d: 'd' })
+    expect(replaceEmptyValues({ a: 'a', b: 'b ', c: ' ', d: '' })).toStrictEqual({ a: 'a', b: 'b ', c: null, d: null })
   })
 })

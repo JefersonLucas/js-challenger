@@ -215,6 +215,36 @@ function swapObject (obj) {
   // }, {});
 }
 
+/**
+ * **Replace empty strings in object with null values**
+ * is a function that takes an object as argument.
+ * Some of the property values contain empty strings.
+ * Replace empty strings and strings that contain only whitespace with null values.
+ * Return the resulting object.
+ *
+ * @param {object} obj is an object.
+ * @returns {object} the object with empty strings and strings that contain only blanks for null values.
+ */
+
+function replaceEmptyValues (obj) {
+  const object = {}
+  const keys = Object.keys(obj)
+  const values = Object.values(obj)
+
+  for (let i = 0; i < keys.length; i++) {
+    values[i].trim() === '' ? object[keys[i]] = null : object[keys[i]] = values[i]
+  }
+
+  return object
+
+  // Other solution:
+  // const newObj = { ...obj }
+  // for (key in newObj) {
+  //   if (newObj[key].trim() === '') newObj[key] = null
+  // }
+  // return newObj
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -228,5 +258,6 @@ module.exports = {
   mergeObjects,
   multiplyObjectValues,
   createObjectThree,
-  swapObject
+  swapObject,
+  replaceEmptyValues
 }
