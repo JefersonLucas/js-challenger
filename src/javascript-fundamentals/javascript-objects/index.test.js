@@ -9,7 +9,8 @@ const {
   accessObjectProperty,
   removePropertyObject,
   mergeObjects,
-  multiplyObjectValues
+  multiplyObjectValues,
+  createObjectThree
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -73,5 +74,11 @@ describe('Javascript Objects', () => {
     expect(multiplyObjectValues({ a: 1, b: 2, c: 3 }, 3)).toStrictEqual({ a: 3, b: 6, c: 9 })
     expect(multiplyObjectValues({ j: 9, i: 2, x: 3, z: 4 }, 10)).toStrictEqual({ j: 90, i: 20, x: 30, z: 40 })
     expect(multiplyObjectValues({ w: 15, x: 22, y: 13 }, 6)).toStrictEqual({ w: 90, x: 132, y: 78 })
+  })
+
+  test('must create an object taking from two arrays', () => {
+    expect(createObjectThree(['a', 'b', 'c'], [1, 2, 3])).toStrictEqual({ a: 1, b: 2, c: 3 })
+    expect(createObjectThree(['w', 'x', 'y', 'z'], [10, 9, 5, 2])).toStrictEqual({ w: 10, x: 9, y: 5, z: 2 })
+    expect(createObjectThree([1, 'b'], ['a', 2])).toStrictEqual({ 1: 'a', b: 2 })
   })
 })

@@ -166,6 +166,28 @@ function multiplyObjectValues (a, b) {
   }, {})
 }
 
+/**
+ * **Creating Javascript objects three**
+ * is a function that takes two arrays (`a` and `b`) as arguments.
+ * Return an object that has properties with keys `a` and corresponding values `b`.
+ *
+ * @param {Array<string | number>} a is an array of string or number.
+ * @param {Array<string | number>} b is an array of string or number.
+ * @returns {object} the object that has properties with keys `a` and corresponding values `b`.
+ */
+
+function createObjectThree (a, b) {
+  const object = {}
+
+  for (let i = 0; i < a.length; i++) {
+    object[a[i]] = b[i]
+  }
+
+  return object
+
+  // Other solution:  return a.reduce((acc, cur, i) => ({ ...acc, [cur]: b[i] }), {});
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -177,5 +199,6 @@ module.exports = {
   accessObjectProperty,
   removePropertyObject,
   mergeObjects,
-  multiplyObjectValues
+  multiplyObjectValues,
+  createObjectThree
 }
