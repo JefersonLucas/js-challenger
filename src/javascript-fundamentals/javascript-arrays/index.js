@@ -221,6 +221,34 @@ function checkAllElementsAreEqual (arr) {
   const result = [...arrUniq.values()]
 
   return !(result.length > 1)
+
+  // Other solution: return new Set(arr).size === 1
+}
+
+/**
+ * **Merge an arbitrary number of arrays**
+ * is a function that takes arguments an arbitrary number of arrays.
+ * It should return an array containing the values of all arrays.
+ *
+ * @param  {...any[]} arrays is an array of any.
+ * @returns {array} the array containing the values of all arrays.
+ */
+
+function mergeArbitraryArrays (...arrays) {
+  return arrays.reduce((a, b) => a.concat(b), [])
+
+  /**
+   * Others solutions
+   *
+   * **Array.prototype.flat()**
+   *
+   * The `flat()` method creates a new array with all sub-array elements concatenated into it recursively to the specified depth.
+   *
+   * example:
+   * return arrays.flat()
+   *
+   * reference: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
+   */
 }
 
 module.exports = {
@@ -237,5 +265,6 @@ module.exports = {
   averageArrayOfNumbers,
   longestStringOnArray,
   rangeOfNumbers,
-  checkAllElementsAreEqual
+  checkAllElementsAreEqual,
+  mergeArbitraryArrays
 }

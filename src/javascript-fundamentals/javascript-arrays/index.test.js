@@ -13,7 +13,8 @@ const {
   averageArrayOfNumbers,
   longestStringOnArray,
   rangeOfNumbers,
-  checkAllElementsAreEqual
+  checkAllElementsAreEqual,
+  mergeArbitraryArrays
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -99,5 +100,11 @@ describe('Javascript Arrays', () => {
     expect(checkAllElementsAreEqual(['test', 'test'])).toBe(true)
     expect(checkAllElementsAreEqual([1, 2])).toBe(false)
     expect(checkAllElementsAreEqual(['10', 10])).toBe(false)
+  })
+
+  test('must merge an arbitrary numbers of arrays', () => {
+    expect(mergeArbitraryArrays([1, 2, 3], [4, 5, 6])).toStrictEqual([1, 2, 3, 4, 5, 6])
+    expect(mergeArbitraryArrays(['a', 'b', 'c'], [4, 5, 6])).toStrictEqual(['a', 'b', 'c', 4, 5, 6])
+    expect(mergeArbitraryArrays([true, true], [1, 2], ['a', 'b'])).toStrictEqual([true, true, 1, 2, 'a', 'b'])
   })
 })
