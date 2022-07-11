@@ -163,6 +163,7 @@ All the challenges I've already completed:
 | 07   | Creating Javascript objects three                              | Fundamentals | Objects | Easy       |
 | 07   | Swap object keys and values                                    | Fundamentals | Objects | Medium     |
 | 07   | Replace empty strings in object with null values               | Fundamentals | Objects | Medium     |
+| 07   | Return the next higher prime number                            | Fundamentals | Objects | Advanced   |
 
 ## Stacks
 
