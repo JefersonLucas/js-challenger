@@ -161,6 +161,7 @@ All the challenges I've already completed:
 | 06   | Check if all array elements are equal                          | Fundamentals | Arrays  | Easy       |
 | 07   | Merge an arbitrary number of arrays                            | Fundamentals | Arrays  | Easy       |
 | 07   | Creating Javascript objects three                              | Fundamentals | Objects | Easy       |
+| 07   | Swap object keys and values                                    | Fundamentals | Objects | Medium     |
 
 ## Stacks
 

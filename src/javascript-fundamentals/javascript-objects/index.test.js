@@ -10,7 +10,8 @@ const {
   removePropertyObject,
   mergeObjects,
   multiplyObjectValues,
-  createObjectThree
+  createObjectThree,
+  swapObject
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -80,5 +81,11 @@ describe('Javascript Objects', () => {
     expect(createObjectThree(['a', 'b', 'c'], [1, 2, 3])).toStrictEqual({ a: 1, b: 2, c: 3 })
     expect(createObjectThree(['w', 'x', 'y', 'z'], [10, 9, 5, 2])).toStrictEqual({ w: 10, x: 9, y: 5, z: 2 })
     expect(createObjectThree([1, 'b'], ['a', 2])).toStrictEqual({ 1: 'a', b: 2 })
+  })
+
+  test('must swap object keys and values', () => {
+    expect(swapObject({ z: 'a', y: 'b', x: 'c', w: 'd' })).toStrictEqual({ a: 'z', b: 'y', c: 'x', d: 'w' })
+    expect(swapObject({ 2: 'a', 4: 'b', 6: 'c', 8: 'd' })).toStrictEqual({ a: '2', b: '4', c: '6', d: '8' })
+    expect(swapObject({ a: 1, z: 24 })).toStrictEqual({ 1: 'a', 24: 'z' })
   })
 })

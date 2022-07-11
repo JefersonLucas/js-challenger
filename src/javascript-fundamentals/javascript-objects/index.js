@@ -188,6 +188,33 @@ function createObjectThree (a, b) {
   // Other solution:  return a.reduce((acc, cur, i) => ({ ...acc, [cur]: b[i] }), {});
 }
 
+/**
+ * **Swap object keys and values**
+ * is a function that takes an `object` as argument.
+ * Somehow, the properties and keys of the object got mixed up.
+ * Swap the Javascript object's key with its values and return the resulting object.
+ *
+ * @param {object} obj is an object.
+ * @returns {object} the object with the keys and values exchanged.
+ */
+
+function swapObject (obj) {
+  const object = {}
+  const keys = Object.keys(obj)
+  const values = Object.values(obj)
+
+  for (let i = 0; i < keys.length; i++) {
+    object[values[i]] = keys[i]
+  }
+
+  return object
+
+  // Other solution
+  // return Object.entries(obj).reduce((acc, [key, val]) => {
+  //   return { ...acc, [val]: key };
+  // }, {});
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -200,5 +227,6 @@ module.exports = {
   removePropertyObject,
   mergeObjects,
   multiplyObjectValues,
-  createObjectThree
+  createObjectThree,
+  swapObject
 }
