@@ -387,11 +387,6 @@ function nextHigherPrimeNumber (a) {
   return number
 }
 
-console.log(nextHigherPrimeNumber(38))
-console.log(nextHigherPrimeNumber(7))
-console.log(nextHigherPrimeNumber(115))
-console.log(nextHigherPrimeNumber(2000))
-
 module.exports = {
   sumTwoNumbers,
   compareTypes,
