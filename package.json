@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "watch": "jest --watch --verbose=true"
-  },  
+    "test-watch": "jest --watch --verbose=true",
+    "array-watch": "nodemon src/javascript-fundamentals/javascript-arrays/index.js",
+    "basic-watch": "nodemon src/javascript-fundamentals/javascript-basics/index.js",
+    "date-watch": "nodemon src/javascript-fundamentals/javascript-dates/index.js",
+    "object-watch": "nodemon src/javascript-fundamentals/javascript-objects/index.js",
+    "set-watch": "nodemon src/javascript-fundamentals/javascript-sets/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JefersonLucas/js-challenger.git"
@@ -27,6 +32,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "jest": "^28.1.2"
+    "jest": "^28.1.2",
+    "nodemon": "^2.0.19"
   }
 }
