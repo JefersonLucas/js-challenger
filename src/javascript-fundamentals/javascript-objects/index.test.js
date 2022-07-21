@@ -13,7 +13,7 @@ const {
   createObjectThree,
   swapObject,
   replaceEmptyValues,
-  myFunction
+  checkProperty
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -98,8 +98,8 @@ describe('Javascript Objects', () => {
   })
 
   test('must check if property exists in object', () => {
-    expect(myFunction({ a: 1, b: 2, c: 3 }, 'b')).toBe(true)
-    expect(myFunction({ x: 'a', y: null, z: 'c' }, 'y')).toBe(false)
-    expect(myFunction({ x: 'a', b: 'b', z: undefined }, 'z')).toBe(false)
+    expect(checkProperty({ a: 1, b: 2, c: 3 }, 'b')).toBe(true)
+    expect(checkProperty({ x: 'a', y: null, z: 'c' }, 'y')).toBe(false)
+    expect(checkProperty({ x: 'a', b: 'b', z: undefined }, 'z')).toBe(false)
   })
 })

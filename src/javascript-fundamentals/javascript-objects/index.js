@@ -259,7 +259,7 @@ function replaceEmptyValues (obj) {
  * @returns {boolean}
  */
 
-function myFunction (a, b) {
+function checkProperty (a, b) {
   return !!a[b]
 
   // Others solutions:
@@ -282,5 +282,5 @@ module.exports = {
   createObjectThree,
   swapObject,
   replaceEmptyValues,
-  myFunction
+  checkProperty
 }
