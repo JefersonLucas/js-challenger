@@ -166,6 +166,7 @@ All the challenges I've already completed:
 | 07   | Return the next higher prime number                            | Fundamentals | Objects | Advanced   |
 | 08   | Check if property exists in object and is truthy               | Fundamentals | Objects | Easy       |
 | 08   | Calculate the sum of an array of numbers                       | Fundamentals | Array   | Easy       |
+| 08   | Add property to each object in array                           | Fundamentals | Objects | Easy       |
 
 ## Documentation
 
@@ -178,6 +179,7 @@ Some of the documentation I used in this project:
 **Array**
 
 - [reduce()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [map()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 ## Stacks
 

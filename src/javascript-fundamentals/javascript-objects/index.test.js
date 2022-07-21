@@ -13,7 +13,8 @@ const {
   createObjectThree,
   swapObject,
   replaceEmptyValues,
-  checkProperty
+  checkProperty,
+  addPropertyToEachObject
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -101,5 +102,15 @@ describe('Javascript Objects', () => {
     expect(checkProperty({ a: 1, b: 2, c: 3 }, 'b')).toBe(true)
     expect(checkProperty({ x: 'a', y: null, z: 'c' }, 'y')).toBe(false)
     expect(checkProperty({ x: 'a', b: 'b', z: undefined }, 'z')).toBe(false)
+  })
+
+  test('must add property to each object in array', () => {
+    const arr1 = [{ city: 'Tokyo', country: 'Japan' }, { city: 'Bangkok', country: 'Thailand' }]
+    const expectArr1 = [{ city: 'Tokyo', country: 'Japan', continent: 'Asia' }, { city: 'Bangkok', country: 'Thailand', continent: 'Asia' }]
+    const arr2 = [{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }]
+    const expectArr2 = [{ city: 'Stockholm', country: 'Sweden', continent: 'Europe' }, { city: 'Paris', country: 'France', continent: 'Europe' }]
+
+    expect(addPropertyToEachObject(arr1, 'Asia')).toStrictEqual(expectArr1)
+    expect(addPropertyToEachObject(arr2, 'Europe')).toStrictEqual(expectArr2)
   })
 })

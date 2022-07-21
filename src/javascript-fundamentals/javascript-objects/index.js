@@ -267,6 +267,28 @@ function checkProperty (a, b) {
   // 2. return a[b] ? true : false;
 }
 
+/**
+ * **Add property to each object in array**
+ * is a function that takes an array of objects and a string as arguments.
+ * Add a property with key 'continent' and value equal to the string to each of the objects.
+ * Return the new array of objects.
+ *
+ * @param {Array<{}>} arr is an array of objects.
+ * @param {string} str is an string.
+ * @returns {Array<{}>} the new array of objects.
+ */
+
+function addPropertyToEachObject (arr, str) {
+  return arr.map((item) => {
+    return {
+      ...item,
+      continent: str
+    }
+  })
+
+  // Other solution:  // Other solution: return arr.map((item) => ({ ...item, continent: str }))
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -282,5 +304,6 @@ module.exports = {
   createObjectThree,
   swapObject,
   replaceEmptyValues,
-  checkProperty
+  checkProperty,
+  addPropertyToEachObject
 }
