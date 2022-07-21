@@ -245,6 +245,28 @@ function replaceEmptyValues (obj) {
   // return newObj
 }
 
+/**
+ * **Check if property exists in object and is truthy**
+ * is  a function that takes an object `a` and a string `b` as argument.
+ * Return true if the object has a property with key `b`,
+ * but only if it has a truthy value.
+ *
+ * In other words, it should not be null or undefined or false
+ * Return false otherwise.
+ *
+ * @param {object} a is an object of any.
+ * @param {string} b is an string.
+ * @returns {boolean}
+ */
+
+function myFunction (a, b) {
+  return !!a[b]
+
+  // Others solutions:
+  // 1. return Boolean(a[b]);
+  // 2. return a[b] ? true : false;
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -259,5 +281,6 @@ module.exports = {
   multiplyObjectValues,
   createObjectThree,
   swapObject,
-  replaceEmptyValues
+  replaceEmptyValues,
+  myFunction
 }

@@ -12,7 +12,8 @@ const {
   multiplyObjectValues,
   createObjectThree,
   swapObject,
-  replaceEmptyValues
+  replaceEmptyValues,
+  myFunction
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -94,5 +95,11 @@ describe('Javascript Objects', () => {
     expect(replaceEmptyValues({ a: 'a', b: 'b', c: '' })).toStrictEqual({ a: 'a', b: 'b', c: null })
     expect(replaceEmptyValues({ a: '', b: 'b', c: ' ', d: 'd' })).toStrictEqual({ a: null, b: 'b', c: null, d: 'd' })
     expect(replaceEmptyValues({ a: 'a', b: 'b ', c: ' ', d: '' })).toStrictEqual({ a: 'a', b: 'b ', c: null, d: null })
+  })
+
+  test('must check if property exists in object', () => {
+    expect(myFunction({ a: 1, b: 2, c: 3 }, 'b')).toBe(true)
+    expect(myFunction({ x: 'a', y: null, z: 'c' }, 'y')).toBe(false)
+    expect(myFunction({ x: 'a', b: 'b', z: undefined }, 'z')).toBe(false)
   })
 })
