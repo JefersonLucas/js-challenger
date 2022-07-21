@@ -251,6 +251,19 @@ function mergeArbitraryArrays (...arrays) {
    */
 }
 
+/**
+ * **Calculate the sum of an array of numbers**
+ * is a function that takes an array of numbers as argument.
+ * It should return the sum of the numbers.
+ *
+ * @param {number[]} a is an array of numbers.
+ * @returns {number} the sum of the numbers.
+ */
+
+function sumArrayNumbers (a) {
+  return a.reduce((a, b) => a + b, 0)
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -266,5 +279,6 @@ module.exports = {
   longestStringOnArray,
   rangeOfNumbers,
   checkAllElementsAreEqual,
-  mergeArbitraryArrays
+  mergeArbitraryArrays,
+  sumArrayNumbers
 }

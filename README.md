@@ -165,6 +165,7 @@ All the challenges I've already completed:
 | 07   | Replace empty strings in object with null values               | Fundamentals | Objects | Medium     |
 | 07   | Return the next higher prime number                            | Fundamentals | Objects | Advanced   |
 | 08   | Check if property exists in object and is truthy               | Fundamentals | Objects | Easy       |
+| 08   | Calculate the sum of an array of numbers                       | Fundamentals | Array   | Easy       |
 
 ## Documentation
 
@@ -173,6 +174,10 @@ Some of the documentation I used in this project:
 **Guide**
 
 - [Expressions_and_operators](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators)
+
+**Array**
+
+- [reduce()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
 ## Stacks
 

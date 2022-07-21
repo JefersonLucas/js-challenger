@@ -1,4 +1,3 @@
-const { expect } = require('expect')
 const {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -14,7 +13,8 @@ const {
   longestStringOnArray,
   rangeOfNumbers,
   checkAllElementsAreEqual,
-  mergeArbitraryArrays
+  mergeArbitraryArrays,
+  sumArrayNumbers
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -106,5 +106,11 @@ describe('Javascript Arrays', () => {
     expect(mergeArbitraryArrays([1, 2, 3], [4, 5, 6])).toStrictEqual([1, 2, 3, 4, 5, 6])
     expect(mergeArbitraryArrays(['a', 'b', 'c'], [4, 5, 6])).toStrictEqual(['a', 'b', 'c', 4, 5, 6])
     expect(mergeArbitraryArrays([true, true], [1, 2], ['a', 'b'])).toStrictEqual([true, true, 1, 2, 'a', 'b'])
+  })
+
+  test('must calculate the sum of an array of numbers', () => {
+    expect(sumArrayNumbers([10, 100, 40])).toBe(150)
+    expect(sumArrayNumbers([10, 100, 1000, 1])).toBe(1111)
+    expect(sumArrayNumbers([-50, 0, 50, 200])).toBe(200)
   })
 })
