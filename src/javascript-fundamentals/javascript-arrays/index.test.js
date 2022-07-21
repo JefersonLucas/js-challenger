@@ -14,7 +14,8 @@ const {
   rangeOfNumbers,
   checkAllElementsAreEqual,
   mergeArbitraryArrays,
-  sumArrayNumbers
+  sumArrayNumbers,
+  mergeArraysWithDuplicateValues
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -112,5 +113,10 @@ describe('Javascript Arrays', () => {
     expect(sumArrayNumbers([10, 100, 40])).toBe(150)
     expect(sumArrayNumbers([10, 100, 1000, 1])).toBe(1111)
     expect(sumArrayNumbers([-50, 0, 50, 200])).toBe(200)
+  })
+
+  test('must merge two arrays with duplicate values', () => {
+    expect(mergeArraysWithDuplicateValues([1, 2, 3], [3, 4, 5])).toStrictEqual([1, 2, 3, 4, 5])
+    expect(mergeArraysWithDuplicateValues([-10, 22, 333, 42], [-11, 5, 22, 41, 42])).toStrictEqual([-11, -10, 5, 22, 41, 42, 333])
   })
 })

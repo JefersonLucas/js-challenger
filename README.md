@@ -167,19 +167,28 @@ All the challenges I've already completed:
 | 08   | Check if property exists in object and is truthy               | Fundamentals | Objects | Easy       |
 | 08   | Calculate the sum of an array of numbers                       | Fundamentals | Array   | Easy       |
 | 08   | Add property to each object in array                           | Fundamentals | Objects | Easy       |
+| 08   | Merge two arrays with duplicate values                         | Fundamentals | Objects | Easy       |
 
 ## Documentation
 
 Some of the documentation I used in this project:
 
-**Guide**
+**Guide**:
 
-- [Expressions_and_operators](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators)
+- [Expressions and operators](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators)
 
-**Array**
+**Array**:
 
 - [reduce()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 - [map()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [from()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+- [flat()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+- [sort()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+**Set**:
+
+- [Set](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Set)
+- [add()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Set/add)
 
 ## Stacks
 
