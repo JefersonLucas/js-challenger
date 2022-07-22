@@ -176,6 +176,7 @@ All the challenges I've already completed:
 | 08   | Convert array to object with counter                           | Fundamentals | Objects | Medium     |
 | 09   | Select the button element on the page                          | DOM          | Methods | Easy       |
 | 09   | Query descendent HTML elements                                 | DOM          | Methods | Easy       |
+| 09   | Select multiple HTML elements                                  | DOM          | Methods | Easy       |
 
 ## Documentation
 
@@ -198,6 +199,12 @@ Some of the documentation I used in this project:
 
 - [Set](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Set)
 - [add()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Set/add)
+
+**DOM**
+
+- [getElementById()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementById)
+- [querySelector()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/querySelector)
+- [querySelectorAll()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/querySelectorAll)
 
 ## Stacks
 
