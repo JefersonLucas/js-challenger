@@ -12,7 +12,10 @@ const {
   multiplyObjectValues,
   createObjectThree,
   swapObject,
-  replaceEmptyValues
+  replaceEmptyValues,
+  checkProperty,
+  addPropertyToEachObject,
+  convertArrayToObjectWithCounter
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -94,5 +97,27 @@ describe('Javascript Objects', () => {
     expect(replaceEmptyValues({ a: 'a', b: 'b', c: '' })).toStrictEqual({ a: 'a', b: 'b', c: null })
     expect(replaceEmptyValues({ a: '', b: 'b', c: ' ', d: 'd' })).toStrictEqual({ a: null, b: 'b', c: null, d: 'd' })
     expect(replaceEmptyValues({ a: 'a', b: 'b ', c: ' ', d: '' })).toStrictEqual({ a: 'a', b: 'b ', c: null, d: null })
+  })
+
+  test('must check if property exists in object', () => {
+    expect(checkProperty({ a: 1, b: 2, c: 3 }, 'b')).toBe(true)
+    expect(checkProperty({ x: 'a', y: null, z: 'c' }, 'y')).toBe(false)
+    expect(checkProperty({ x: 'a', b: 'b', z: undefined }, 'z')).toBe(false)
+  })
+
+  test('must add property to each object in array', () => {
+    const arr1 = [{ city: 'Tokyo', country: 'Japan' }, { city: 'Bangkok', country: 'Thailand' }]
+    const expectArr1 = [{ city: 'Tokyo', country: 'Japan', continent: 'Asia' }, { city: 'Bangkok', country: 'Thailand', continent: 'Asia' }]
+    const arr2 = [{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }]
+    const expectArr2 = [{ city: 'Stockholm', country: 'Sweden', continent: 'Europe' }, { city: 'Paris', country: 'France', continent: 'Europe' }]
+
+    expect(addPropertyToEachObject(arr1, 'Asia')).toStrictEqual(expectArr1)
+    expect(addPropertyToEachObject(arr2, 'Europe')).toStrictEqual(expectArr2)
+  })
+
+  test('must convert array to object', () => {
+    expect(convertArrayToObjectWithCounter([1, 2, 2, 3])).toStrictEqual({ 1: 1, 2: 2, 3: 1 })
+    expect(convertArrayToObjectWithCounter([9, 9, 9, 99])).toStrictEqual({ 9: 3, 99: 1 })
+    expect(convertArrayToObjectWithCounter([4, 3, 2, 1])).toStrictEqual({ 1: 1, 2: 1, 3: 1, 4: 1 })
   })
 })

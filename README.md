@@ -164,6 +164,33 @@ All the challenges I've already completed:
 | 07   | Swap object keys and values                                    | Fundamentals | Objects | Medium     |
 | 07   | Replace empty strings in object with null values               | Fundamentals | Objects | Medium     |
 | 07   | Return the next higher prime number                            | Fundamentals | Objects | Advanced   |
+| 08   | Check if property exists in object and is truthy               | Fundamentals | Objects | Easy       |
+| 08   | Calculate the sum of an array of numbers                       | Fundamentals | Arrays  | Easy       |
+| 08   | Add property to each object in array                           | Fundamentals | Objects | Easy       |
+| 08   | Merge two arrays with duplicate values                         | Fundamentals | Arrays  | Easy       |
+| 08   | Convert array to object with counter                           | Fundamentals | Objects | Medium     |
+
+## Documentation
+
+Some of the documentation I used in this project:
+
+**Guide**:
+
+- [Expressions and operators](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators)
+
+**Array**:
+
+- [reduce()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [map()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [from()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+- [flat()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+- [sort()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- [filter()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+**Set**:
+
+- [Set](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Set)
+- [add()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Set/add)
 
 ## Stacks
 
@@ -176,8 +203,8 @@ This project is configured with the following stacks:
 - Git: `2.28.0`
 - Git Flow: `1.12.3`
 
-For more information check the [package.json](https://github.com/JefersonLucas/js-challenger/blob/main/package.json) file of this project.
+For more information check the [package.json](package.json) file of this project.
 
 ## License 
 
-This project is licensed under the MIT license - see the [LICENSE.md](https://github.com/JefersonLucas/js-challenger/blob/main/LICENSE.md) for details.
+This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md) for details.
