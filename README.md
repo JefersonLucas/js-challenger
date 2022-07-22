@@ -178,6 +178,7 @@ All the challenges I've already completed:
 | 09   | Query descendent HTML elements                                 | DOM          | Methods | Easy       |
 | 09   | Select multiple HTML elements                                  | DOM          | Methods | Easy       |
 | 09   | Extracting information from objects                            | Fundamentals | Objects | Advanced   |
+| 09   | Query and exclude HTML elements                                | DOM          | Methods | Easy       |
 
 ## Documentation
 

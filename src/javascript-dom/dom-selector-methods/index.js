@@ -43,13 +43,40 @@ buttonElem.addEventListener('click', () => {
  * Once you have completed the code below, verify it by hovering over the list items until all items have the value 'ON'
  */
 
-const listItems = document.querySelectorAll('#list li')
+// const listItems = document.querySelectorAll('#list li')
 
-const handleHover = (event) => {
-  // eslint-disable-next-line no-return-assign
-  return event.target.innerText = 'ON'
+// const handleHover = (event) => {
+//   // eslint-disable-next-line no-return-assign
+//   return event.target.innerText = 'ON'
+// }
+
+// if (listItems.length > 1) {
+//   listItems.forEach(item => item.addEventListener('mouseover', handleHover))
+// }
+
+/**
+ * **Query and exclude HTML elements**
+ * In this scenario, you need to query all list items that belong to the list with id 'list'.
+ * But, exclude the ones with id 'disabled'.
+ * Assign those items to the variable 'listItems' by using an appropriate selector method.
+ * Once you have completed the code below,
+ * verify it by clicking the button.
+ * The respective items should change their text.
+ */
+
+const listItems = document.querySelectorAll('#list, #disabled')
+// Other solution: const listItems = document.querySelectorAll('#list li:not(#disabled)');
+
+const button = document.getElementById('button')
+
+const handleClick = () => {
+  listItems.forEach(item => {
+    const oldText = item.innerText
+    // eslint-disable-next-line no-return-assign
+    return item.innerText = oldText === 'ON' ? 'OFF' : 'ON'
+  })
 }
 
 if (listItems.length > 1) {
-  listItems.forEach(item => item.addEventListener('mouseover', handleHover))
+  button.addEventListener('click', handleClick)
 }
