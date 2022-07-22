@@ -245,6 +245,71 @@ function replaceEmptyValues (obj) {
   // return newObj
 }
 
+/**
+ * **Check if property exists in object and is truthy**
+ * is  a function that takes an object `a` and a string `b` as argument.
+ * Return true if the object has a property with key `b`,
+ * but only if it has a truthy value.
+ *
+ * In other words, it should not be null or undefined or false
+ * Return false otherwise.
+ *
+ * @param {object} a is an object of any.
+ * @param {string} b is an string.
+ * @returns {boolean}
+ */
+
+function checkProperty (a, b) {
+  return !!a[b]
+
+  // Others solutions:
+  // 1. return Boolean(a[b]);
+  // 2. return a[b] ? true : false;
+}
+
+/**
+ * **Add property to each object in array**
+ * is a function that takes an array of objects and a string as arguments.
+ * Add a property with key 'continent' and value equal to the string to each of the objects.
+ * Return the new array of objects.
+ *
+ * @param {Array<{}>} arr is an array of objects.
+ * @param {string} str is an string.
+ * @returns {Array<{}>} the new array of objects.
+ */
+
+function addPropertyToEachObject (arr, str) {
+  return arr.map((item) => {
+    return {
+      ...item,
+      continent: str
+    }
+  })
+
+  // Other solution: return arr.map((item) => ({ ...item, continent: str }))
+}
+
+/**
+ * **Convert array to object with counter**
+ * is a function that takes an array of numbers as argument.
+ * Convert the array to an object.
+ * It should have a key for each unique value of the array.
+ * The corresponding object value should be the number of times the key occurs within the array.
+ *
+ * @param {number[]} a is an array of number.
+ * @returns {object} the correspongding object value should be the number of times the key ocurs within the array.
+ */
+
+function convertArrayToObjectWithCounter (a) {
+  const arr = [...new Set([...a])]
+  const obj = {}
+
+  for (let i = 0; i < arr.length; i++) obj[arr[i]] = a.filter((value) => value === arr[i]).length
+
+  return obj
+  // Other solution: return a.reduce((acc, cur) => ({ ...acc, [cur]: (acc[cur] || 0) + 1 }), {})
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -259,5 +324,8 @@ module.exports = {
   multiplyObjectValues,
   createObjectThree,
   swapObject,
-  replaceEmptyValues
+  replaceEmptyValues,
+  checkProperty,
+  addPropertyToEachObject,
+  convertArrayToObjectWithCounter
 }

@@ -251,6 +251,44 @@ function mergeArbitraryArrays (...arrays) {
    */
 }
 
+/**
+ * **Calculate the sum of an array of numbers**
+ * is a function that takes an array of numbers as argument.
+ * It should return the sum of the numbers.
+ *
+ * @param {number[]} a is an array of numbers.
+ * @returns {number} the sum of the numbers.
+ */
+
+function sumArrayNumbers (a) {
+  return a.reduce((a, b) => a + b, 0)
+}
+
+/**
+ * **Merge two arrays with duplicate values**
+ * is a function that takes two arrays as arguments:
+ * - Merge both arrays and remove duplicate values.
+ * - Sort the merge result in ascending order.
+ * - Return the resulting array.
+ *
+ * @param {number[]} a is an array.
+ * @param {number} b is an array.
+ * @returns {number[]} the resultin array.
+ */
+
+function mergeArraysWithDuplicateValues (a, b) {
+  const arr = [...a, ...b].flat()
+
+  const result = new Set([])
+
+  for (let i = 0; i < arr.length; i++) {
+    result.add(arr[i])
+  }
+
+  return Array.from(result).sort((a, b) => a - b)
+  // Other solution:  return [...new Set([...a, ...b])].sort((x, y) => x - y);
+}
+
 module.exports = {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -266,5 +304,7 @@ module.exports = {
   longestStringOnArray,
   rangeOfNumbers,
   checkAllElementsAreEqual,
-  mergeArbitraryArrays
+  mergeArbitraryArrays,
+  sumArrayNumbers,
+  mergeArraysWithDuplicateValues
 }

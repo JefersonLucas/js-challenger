@@ -1,4 +1,3 @@
-const { expect } = require('expect')
 const {
   getElementOfArray,
   getFirstsElementsOfArray,
@@ -14,7 +13,9 @@ const {
   longestStringOnArray,
   rangeOfNumbers,
   checkAllElementsAreEqual,
-  mergeArbitraryArrays
+  mergeArbitraryArrays,
+  sumArrayNumbers,
+  mergeArraysWithDuplicateValues
 } = require('./')
 
 describe('Javascript Arrays', () => {
@@ -106,5 +107,16 @@ describe('Javascript Arrays', () => {
     expect(mergeArbitraryArrays([1, 2, 3], [4, 5, 6])).toStrictEqual([1, 2, 3, 4, 5, 6])
     expect(mergeArbitraryArrays(['a', 'b', 'c'], [4, 5, 6])).toStrictEqual(['a', 'b', 'c', 4, 5, 6])
     expect(mergeArbitraryArrays([true, true], [1, 2], ['a', 'b'])).toStrictEqual([true, true, 1, 2, 'a', 'b'])
+  })
+
+  test('must calculate the sum of an array of numbers', () => {
+    expect(sumArrayNumbers([10, 100, 40])).toBe(150)
+    expect(sumArrayNumbers([10, 100, 1000, 1])).toBe(1111)
+    expect(sumArrayNumbers([-50, 0, 50, 200])).toBe(200)
+  })
+
+  test('must merge two arrays with duplicate values', () => {
+    expect(mergeArraysWithDuplicateValues([1, 2, 3], [3, 4, 5])).toStrictEqual([1, 2, 3, 4, 5])
+    expect(mergeArraysWithDuplicateValues([-10, 22, 333, 42], [-11, 5, 22, 41, 42])).toStrictEqual([-11, -10, 5, 22, 41, 42, 333])
   })
 })
