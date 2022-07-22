@@ -41,8 +41,13 @@ Categories and topics are divided into different folders. For each category ther
 
 ```
 src/
-└── javascript-fundamentals/
-    ├── javascript-basics/
+├── javascript-fundamentals/
+|   ├── javascript-basics/
+|   |   ├─── index.js
+|   |   └─── index.test.js
+|   └── README.md
+└── javascript-dom/
+    ├── dom-selector-methods/
     |   ├─── index.js
     |   └─── index.test.js
     └── README.md
@@ -169,6 +174,8 @@ All the challenges I've already completed:
 | 08   | Add property to each object in array                           | Fundamentals | Objects | Easy       |
 | 08   | Merge two arrays with duplicate values                         | Fundamentals | Arrays  | Easy       |
 | 08   | Convert array to object with counter                           | Fundamentals | Objects | Medium     |
+| 09   | Select the button element on the page                          | DOM          | Methods | Easy       |
+| 09   | Query descendent HTML elements                                 | DOM          | Methods | Easy       |
 
 ## Documentation
 
