@@ -286,7 +286,28 @@ function addPropertyToEachObject (arr, str) {
     }
   })
 
-  // Other solution:  // Other solution: return arr.map((item) => ({ ...item, continent: str }))
+  // Other solution: return arr.map((item) => ({ ...item, continent: str }))
+}
+
+/**
+ * **Convert array to object with counter**
+ * is a function that takes an array of numbers as argument.
+ * Convert the array to an object.
+ * It should have a key for each unique value of the array.
+ * The corresponding object value should be the number of times the key occurs within the array.
+ *
+ * @param {number[]} a is an array of number.
+ * @returns {object} the correspongding object value should be the number of times the key ocurs within the array.
+ */
+
+function convertArrayToObjectWithCounter (a) {
+  const arr = [...new Set([...a])]
+  const obj = {}
+
+  for (let i = 0; i < arr.length; i++) obj[arr[i]] = a.filter((value) => value === arr[i]).length
+
+  return obj
+  // Other solution: return a.reduce((acc, cur) => ({ ...acc, [cur]: (acc[cur] || 0) + 1 }), {})
 }
 
 module.exports = {
@@ -305,5 +326,6 @@ module.exports = {
   swapObject,
   replaceEmptyValues,
   checkProperty,
-  addPropertyToEachObject
+  addPropertyToEachObject,
+  convertArrayToObjectWithCounter
 }

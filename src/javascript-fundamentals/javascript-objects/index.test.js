@@ -14,7 +14,8 @@ const {
   swapObject,
   replaceEmptyValues,
   checkProperty,
-  addPropertyToEachObject
+  addPropertyToEachObject,
+  convertArrayToObjectWithCounter
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -112,5 +113,11 @@ describe('Javascript Objects', () => {
 
     expect(addPropertyToEachObject(arr1, 'Asia')).toStrictEqual(expectArr1)
     expect(addPropertyToEachObject(arr2, 'Europe')).toStrictEqual(expectArr2)
+  })
+
+  test('must convert array to object', () => {
+    expect(convertArrayToObjectWithCounter([1, 2, 2, 3])).toStrictEqual({ 1: 1, 2: 2, 3: 1 })
+    expect(convertArrayToObjectWithCounter([9, 9, 9, 99])).toStrictEqual({ 9: 3, 99: 1 })
+    expect(convertArrayToObjectWithCounter([4, 3, 2, 1])).toStrictEqual({ 1: 1, 2: 1, 3: 1, 4: 1 })
   })
 })
