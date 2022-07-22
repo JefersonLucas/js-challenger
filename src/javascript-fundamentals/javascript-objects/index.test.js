@@ -15,7 +15,8 @@ const {
   replaceEmptyValues,
   checkProperty,
   addPropertyToEachObject,
-  convertArrayToObjectWithCounter
+  convertArrayToObjectWithCounter,
+  extractingInformationObjects
 } = require('./')
 
 describe('Javascript Objects', () => {
@@ -119,5 +120,21 @@ describe('Javascript Objects', () => {
     expect(convertArrayToObjectWithCounter([1, 2, 2, 3])).toStrictEqual({ 1: 1, 2: 2, 3: 1 })
     expect(convertArrayToObjectWithCounter([9, 9, 9, 99])).toStrictEqual({ 9: 3, 99: 1 })
     expect(convertArrayToObjectWithCounter([4, 3, 2, 1])).toStrictEqual({ 1: 1, 2: 1, 3: 1, 4: 1 })
+  })
+
+  test('must extracting information from objects', () => {
+    const objOne = { fn: 'Lisa', ln: 'Müller', age: 17, size: 175, weight: 67 }
+    const expectObjOne = { fn: 'Lisa', ln: 'Müller', size: '175cm', weight: '67kg' }
+    const objTwo = { fn: 'Martin', ln: 'Harper', age: 26, email: 'martin.harper@test.de', weight: 102 }
+    const expectObjTwo = { fn: 'Martin', ln: 'Harper', weight: '102kg' }
+    const objThree = { fn: 'Andrew', ln: 'Harper', age: 81, size: 175, weight: 71 }
+    const expectObjThree = { fn: 'Andrew', ln: 'Harper', size: '175cm', weight: '71kg' }
+    const objFour = { fn: 'Matthew', ln: 'Müller', age: 19, email: 'matthew@mueller.de' }
+    const expectObjFour = { fn: 'Matthew', ln: 'Müller' }
+
+    expect(extractingInformationObjects(objOne)).toStrictEqual(expectObjOne)
+    expect(extractingInformationObjects(objTwo)).toStrictEqual(expectObjTwo)
+    expect(extractingInformationObjects(objThree)).toStrictEqual(expectObjThree)
+    expect(extractingInformationObjects(objFour)).toStrictEqual(expectObjFour)
   })
 })

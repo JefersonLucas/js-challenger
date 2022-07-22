@@ -310,6 +310,41 @@ function convertArrayToObjectWithCounter (a) {
   // Other solution: return a.reduce((acc, cur) => ({ ...acc, [cur]: (acc[cur] || 0) + 1 }), {})
 }
 
+/**
+ * **Extracting information from objects**
+ * is  a function that takes an object as argument containing properties with personal information:
+ * - Extract firstName, lastName, size, and weight if available;
+ * - If size or weight is given transform the value to a string;
+ * - Attach the unit cm to the size;
+ * - Attach the unit kg to the weight;
+ *
+ * Return a new object with all available properties that we are interested in.
+ *
+ * @param {object} obj is an object.
+ * @returns {object} a new object with all available properties that we are interested in.
+ */
+
+function extractingInformationObjects (obj) {
+  obj.age && delete obj.age
+
+  obj.email && delete obj.email
+
+  if (obj.size) obj.size = `${obj.size}cm`
+
+  if (obj.weight) obj.weight = `${obj.weight}kg`
+
+  return {
+    ...obj
+  }
+  // Other solution:
+  // return {
+  //   fn: obj.fn,
+  //   ln: obj.ln,
+  //   ...(obj.size && { size: `${obj.size}cm` }),
+  //   ...(obj.weight && { weight: `${obj.weight}kg` }),
+  // };
+}
+
 module.exports = {
   propertyKeyCountry,
   createObjectOne,
@@ -327,5 +362,6 @@ module.exports = {
   replaceEmptyValues,
   checkProperty,
   addPropertyToEachObject,
-  convertArrayToObjectWithCounter
+  convertArrayToObjectWithCounter,
+  extractingInformationObjects
 }

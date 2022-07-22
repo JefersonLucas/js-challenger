@@ -41,13 +41,13 @@ Categories and topics are divided into different folders. For each category ther
 
 ```
 src/
-├── javascript-fundamentals/
-|   ├── javascript-basics/
-|   |   ├─── index.js
-|   |   └─── index.test.js
+├── javascript-dom/
+|   ├── dom-selector-methods/
+|   |   ├─── index.html
+|   |   └─── index.js
 |   └── README.md
-└── javascript-dom/
-    ├── dom-selector-methods/
+└── javascript-fundamentals/
+    ├── javascript-basics/
     |   ├─── index.js
     |   └─── index.test.js
     └── README.md
@@ -177,6 +177,7 @@ All the challenges I've already completed:
 | 09   | Select the button element on the page                          | DOM          | Methods | Easy       |
 | 09   | Query descendent HTML elements                                 | DOM          | Methods | Easy       |
 | 09   | Select multiple HTML elements                                  | DOM          | Methods | Easy       |
+| 09   | Extracting information from objects                            | Fundamentals | Objects | Advanced   |
 
 ## Documentation
 
