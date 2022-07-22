@@ -168,7 +168,7 @@ All the challenges I've already completed:
 | 07   | Creating Javascript objects three                              | Fundamentals | Objects | Easy       |
 | 07   | Swap object keys and values                                    | Fundamentals | Objects | Medium     |
 | 07   | Replace empty strings in object with null values               | Fundamentals | Objects | Medium     |
-| 07   | Return the next higher prime number                            | Fundamentals | Objects | Advanced   |
+| 07   | Return the next higher prime number                            | Fundamentals | Basics  | Advanced   |
 | 08   | Check if property exists in object and is truthy               | Fundamentals | Objects | Easy       |
 | 08   | Calculate the sum of an array of numbers                       | Fundamentals | Arrays  | Easy       |
 | 08   | Add property to each object in array                           | Fundamentals | Objects | Easy       |
@@ -179,6 +179,7 @@ All the challenges I've already completed:
 | 09   | Select multiple HTML elements                                  | DOM          | Methods | Easy       |
 | 09   | Extracting information from objects                            | Fundamentals | Objects | Advanced   |
 | 09   | Query and exclude HTML elements                                | DOM          | Methods | Easy       |
+| 09   | Get union of two sets                                          | Fundamentals | Sets    | Easy       |
 
 ## Documentation
 
@@ -187,6 +188,11 @@ Some of the documentation I used in this project:
 **Guide**:
 
 - [Expressions and operators](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators)
+
+
+**Statements**:
+
+- [for...of](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for...of)
 
 **Array**:
 

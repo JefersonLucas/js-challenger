@@ -48,8 +48,33 @@ function createSets (a, b, c) {
   return set
 }
 
+/**
+ * **Get union of two sets**
+ * is a function that takes two Sets as arguments.
+ * Create the union of the two sets.
+ * Return the result.
+ *
+ * @param {Set} a is an Set.
+ * @param {Set} b is an Set.
+ * @returns {Set} the union of the two sets.
+ */
+
+function unionTwoSets (a, b) {
+  const union = new Set(a)
+
+  for (const element of b) union.add(element)
+
+  return union
+
+  // Other solution:
+  //  const result = new Set(a);
+  // b.forEach((el) => result.add(el));
+  // return result;
+}
+
 module.exports = {
   checkValueInSet,
   convertSetToArray,
-  createSets
+  createSets,
+  unionTwoSets
 }
